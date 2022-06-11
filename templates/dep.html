@@ -1,0 +1,230 @@
+{% load static %}
+<html>
+<head>
+<meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Thyroid problems</title>
+<link rel="stylesheet" href="style.css">
+ <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">   
+<style>
+body{
+  font-family:sans-serif;
+  
+  }
+.depr
+ {
+    margin:0% 15% 0% 15%;
+ 
+    font-size:22px;
+    font-family:Times New Roman;
+ }
+    a:link,a:visited,a:hover,a:active{
+        color:darkorange;
+        text-decoration: none;
+        
+    }
+.shortcode-pullquote {
+    color: #6f6358!important;
+    padding: 1rem 0 1rem 2.4rem;
+    border-left: 1rem solid #045a7d;
+    margin: 2rem 0;
+    font-size: 27px;
+    font-family: FedraSerifABook,Merriweather,Georgia,Serif;
+    line-height: 1.48;
+}
+
+*
+{
+    padding: 0;
+    margin:0;
+     box-sizing: border-box;
+}
+
+.menu{
+    background:black;
+    text-align: center;
+}
+
+
+
+.menu ul
+{
+    display:inline-flex;
+    list-style:none;
+     color: #fff;
+     
+}
+.menu ul li
+{
+    width: 150px;
+    margin: 5px;
+    padding: 5px;
+   font-size:20px;
+   
+}
+.menu ul li a
+{
+    text-decoration: none;
+    height:10px;
+    font-size:16px;
+    color: #fff;
+    
+    
+}
+ .menu ul li:hover{
+    background: cadetblue;
+    border-radius:10px;
+   
+}
+.menu .fa
+{
+    margin-right: 6px;
+    
+}
+.submenu
+{
+    display: none;
+    
+}
+.menu ul li:hover .submenu
+{
+    display: block;
+    position: absolute;
+    background: cadetblue ;
+    margin-top: 15px;
+    margin-left: -15px;
+    border-radius:20px;
+}
+
+
+.menu ul li:hover .submenu ul
+{
+    display:block;
+    margin: 0px;
+    padding:0px;
+}
+.menu ul li:hover .submenu ul li
+{
+    width: 300px;
+
+    border-bottom: 1px dotted #fff;
+    background:transparent;
+    border-radius: 0;
+    text-align: left;
+    font-size: 2px;
+   padding:10px;
+}
+
+.menu ul li:hover .submenu ul li:last-child
+{
+    border-bottom: none;
+}
+.menu ul li:hover .submenu ul li a:hover{
+    color:black ;
+}
+.submenu-1
+{
+    display:none;
+}
+.hover-me:hover .submenu-1
+{
+    position: absolute;
+    display: block;
+    margin-top: 0px;
+    margin-left: 140px;
+    background: rgb(10,30,20);
+}
+#google_translate_element select{
+ background:#f6edfd;
+ color:#383ffa;
+ border: none;
+ border-radius:3px;
+ padding:6px 8px;
+ }
+ .goog-logo-link{
+   display:none!important;
+  }
+ .goog-te-gadget{
+ color:transparent!important;
+ } 
+ .goog-te-banner-frame{
+ display:none !important;
+ }
+ 
+ #goog-gt-tt, .goog-te-balloon-frame{display: none !important;}
+.goog-text-highlight { background: none !important; box-shadow: none !important;}
+
+
+
+</style>
+</head>
+<body>
+<div class="navbar">
+<div class="menu">
+ <ul>
+  <div class="logo">
+  <img src="{% static 'images/logo.png' %}" style="height:60px;width:170px;">
+  </div>
+    <li ><i class="fa fa-home" aria-hidden="true"></i><a href="home.html">HOME</a></li>
+    <li><a href="#"><i class="fa fa-book"></i>EDUCATION</a>
+     <div class="submenu">
+         <ul>
+             <li><a href="intermediate.html">Intermediate</a></li>
+             
+             <li><a href="diploma.html">Diploma/Polytechnic</a></li>
+             <li><a href="iti.html">ITI Courses</a></li>
+             <li><a href="para.html">Paramedical Courses</a></li>
+             <li><a href="vocational.html">Vocational Courses</a></li>
+         </ul>
+     </div>
+     </li>
+     <li><a href="#"><i class="fa fa-stethoscope"></i>HEALTH</a>
+     <div class="submenu">
+         <ul>
+             <li><a href="mens.html">Menstruation Problems</a></li>
+             <li><a href="{% url 'fertility' %}">Fertility Problems</a></li>
+              <li><a href="{% url 'thy' %}">Thyroid Problems</a></li>
+             <li><a href="{% url 'cancer' %}">Breast Cancer</a></li>
+             <li><a href="dep.html">Depression</a></li>
+           
+         </ul>
+     </div>
+     </li>
+    <li><a href="security.html"><i class="fa fa-shield"></i>SECURITY</a></li>
+    <li><a href="about.html"><i class="fa fa-clone"></i>ABOUT US</a></li>
+    <li><a href="index.html"><i class="fa fa-phone"></i>CONTACT</a></li>
+    
+    <div id="google_translate_element" ></div>
+<script type="text/javascript">
+function googleTranslateElementInit() {
+  new google.translate.TranslateElement({pageLanguage: 'en'}, 'google_translate_element');
+}
+</script>
+<script type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+</div>
+</div>
+
+<br>
+<div class="depr"><br>
+    <h1 style="color:#003366">Depression</h1><br>
+   <p>We need to understand what depression is. Now, what is a “low”? What is it that happens within you? Fundamentally, you expected something to happen and it did not happen. You expected somebody or something to be your way or the world or the destiny to be your way, and it did not happen. In other words, you are simply against what is happening; that’s all. Maybe you are against a person, maybe you are against a whole situation, maybe you are against life itself. Accordingly, the depression will run deeper and deeper.
+
+Why are you against something? Only because things did not go your way, isn’t it? Why should the whole world go your way? Please know, the world does not go your stupid way. Either you have no faith in the creator or you have no acceptance, or both, and you have a hyper-sensitive ego. That is why you get depressed.</p>
+    <div class="shortcode-pullquote right-quote" style="color: rgb(0, 0, 0); user-select: auto;">In yoga, depression is handled at the level of the body, mind and the energies.</div>
+    <p>Depression makes you cynical and is deeply self-damaging. Depressed people only hurt themselves more. Killing need not necessarily mean physical killing. A depressed person is always trying to cause more damage to himself. A man who goes out with the sword and kills somebody, his ego is not as sensitive and it does not need as much nurturing as a depressed man’s ego. The violent man can be very easily settled. Have you seen this on the streets? When people get into a fight, if there is one man with a little wisdom, if he just handles them right, those people who are trying to kill each other one moment, the next moment, they will drop it and become friends and go off. But this is not so with the depressed person. He will carry this for life. Whether they do it consciously or not, these people go on sharpening their knife and cutting their own heart. Why will a person go on hurting himself? Generally it is to get sympathy. For a very depressed person, normal sympathy is not sufficient; somebody should bleed with him.</p><br>
+
+    <a href="https://youtu.be/hzvT0vy5cjE"><h4>Click here to get motivated: Insight into Depression </h4></a><br>
+    <p>Now what is there in you that can get hurt? If I beat your body with a stick, the body will get hurt; that’s different. Otherwise, what is it that gets hurt within you? Just the ego, isn’t it? The mind and the inner nature cannot get hurt. It is only the ego that gets hurt. So if you are saying, “I want to grow,” growth means going beyond this, trampling your ego and going ahead.<br>
+
+One can make any emotion into a creative force in their life. If your sadness reminds you that you are incomplete, it is good; make use of your sadness to grow. But, when you get sad, if you are going to get irritable and angry, and that whole world is wrong, you are a fool. Do you want to make this sadness into anger or into love and compassion? It is very easy when you are sad, to become compassionate. It is already a dissolving kind of energy; you can use it for further dissolution which leads you to your ultimate well-being.</p>
+<div class="shortcode-pullquote right-quote" style="color: rgb(0, 0, 0); user-select: auto;">Depression makes you cynical and is deeply self-damaging. Depressed people only hurt themselves more.</div><br>
+<p>
+The unfortunate reality with people right now is that their humanity will function only when they are mauled by life. For most people, maturity will not happen without knowing sadness and pain. Otherwise they never understand what is happening with them and with anybody else around them.<br>
+
+In yoga, depression is handled at the level of the body, mind and the energies. If the necessary balance and vibrancy is brought about in the physical, mental and energy bodies, to be blissful is very natural. In a blissful being, depression can never exist.<br>
+
+</p>
+</div>
+</body>
+</html>

@@ -1,0 +1,306 @@
+
+{% load static %}
+<html>
+<head>
+<meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Thyroid problems</title>
+<link rel="stylesheet" href="style.css">
+ <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">   
+<style>
+body{
+  font-family:sans-serif;
+  }
+.fert
+ {
+    margin:0% 15% 0% 15%;
+    font-size:22px;
+    font-family:Times New Roman;
+ }
+*
+{
+    padding: 0;
+    margin:0;
+     box-sizing: border-box;
+}
+
+.menu{
+    background:black;
+    text-align: center;
+}
+
+
+
+.menu ul
+{
+    display:inline-flex;
+    list-style:none;
+     color: #fff;
+     
+}
+.menu ul li
+{
+    width: 150px;
+    margin: 5px;
+    padding: 5px;
+   font-size:20px;
+   
+}
+.menu ul li a
+{
+    text-decoration: none;
+    height:10px;
+    font-size:16px;
+    color: #fff;
+    
+    
+}
+ .menu ul li:hover{
+    background: cadetblue;
+    border-radius:10px;
+   
+}
+.menu .fa
+{
+    margin-right: 6px;
+    
+}
+.submenu
+{
+    display: none;
+    
+}
+.menu ul li:hover .submenu
+{
+    display: block;
+    position: absolute;
+    background: cadetblue ;
+    margin-top: 15px;
+    margin-left: -15px;
+    border-radius:20px;
+}
+
+
+.menu ul li:hover .submenu ul
+{
+    display:block;
+    margin: 0px;
+    padding:0px;
+}
+.menu ul li:hover .submenu ul li
+{
+    width: 300px;
+
+    border-bottom: 1px dotted #fff;
+    background:transparent;
+    border-radius: 0;
+    text-align: left;
+    font-size: 2px;
+   padding:10px;
+}
+
+.menu ul li:hover .submenu ul li:last-child
+{
+    border-bottom: none;
+}
+.menu ul li:hover .submenu ul li a:hover{
+    color:black ;
+}
+.submenu-1
+{
+    display:none;
+}
+.hover-me:hover .submenu-1
+{
+    position: absolute;
+    display: block;
+    margin-top: 0px;
+    margin-left: 140px;
+    background: rgb(10,30,20);
+}
+#google_translate_element select{
+ background:#f6edfd;
+ color:#383ffa;
+ border: none;
+ border-radius:3px;
+ padding:6px 8px;
+ }
+ .goog-logo-link{
+   display:none!important;
+  }
+ .goog-te-gadget{
+ color:transparent!important;
+ } 
+ .goog-te-banner-frame{
+ display:none !important;
+ }
+ 
+ #goog-gt-tt, .goog-te-balloon-frame{display: none !important;}
+.goog-text-highlight { background: none !important; box-shadow: none !important;}
+
+
+
+</style>
+</head>
+<body>
+<div class="navbar">
+<div class="menu">
+ <ul>
+  <div class="logo">
+  <img src="{% static 'images/logo.png' %}" style="height:60px;width:170px;">
+  </div>
+    <li ><i class="fa fa-home" aria-hidden="true"></i><a href="home.html">HOME</a></li>
+    <li><a href="#"><i class="fa fa-book"></i>EDUCATION</a>
+     <div class="submenu">
+         <ul>
+             <li><a href="intermediate.html">Intermediate</a></li>
+             
+             <li><a href="diploma.html">Diploma/Polytechnic</a></li>
+             <li><a href="iti.html">ITI Courses</a></li>
+             <li><a href="para.html">Paramedical Courses</a></li>
+             <li><a href="vocational.html">Vocational Courses</a></li>
+         </ul>
+     </div>
+     </li>
+     <li><a href="#"><i class="fa fa-stethoscope"></i>HEALTH</a>
+     <div class="submenu">
+         <ul>
+             <li><a href="mens.html">Menstruation Problems</a></li>
+             <li><a href="{% url 'fertility' %}">Fertility Problems</a></li>
+              <li><a href="{% url 'thy' %}">Thyroid Problems</a></li>
+             <li><a href="{% url 'cancer' %}">Breast Cancer</a></li>
+             <li><a href="dep.html">Depression</a></li>
+           
+         </ul>
+     </div>
+     </li>
+    <li><a href="security.html"><i class="fa fa-shield"></i>SECURITY</a></li>
+    <li><a href="about.html"><i class="fa fa-clone"></i>ABOUT US</a></li>
+    <li><a href="index.html"><i class="fa fa-phone"></i>CONTACT</a></li>
+    
+    <div id="google_translate_element" ></div>
+<script type="text/javascript">
+function googleTranslateElementInit() {
+  new google.translate.TranslateElement({pageLanguage: 'en'}, 'google_translate_element');
+}
+</script>
+<script type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+</div>
+</div>
+<div class="fert">
+<br><br>
+    <h1 style="color: #003366;">FERTILITY PROBLEMS</h1> <br>
+    <p>Latest report revealed that the fertility rate of Indians 
+         has come down by more than 50% from 4.97 to 2.3, it will  
+         be further reduced to 2.1 during 2025 to 30, and 1.86 from  
+         2045 to 50 and 1.78 from 2095 to 100. Currently, the  
+         infertility rate is 10 to 14% which is higher in urban areas  
+         where 1 out of 6 couples is affected.</p> 
+    <p>Various causes responsible for infertility in women are PCOS, 
+         contraception complications, abortion infections, STDs,  
+         post-partum infections, pelvic inflammatory diseases, etc.  
+         Lifestyle problems such as smoking, alcohol, consuming processed  
+         food, physical and emotional stress can also play a significant role in infertility.</p> 
+    <p>The problem of infertility can be treated with the help of an expert depending  
+        on the underlying cause. There are certain hormone tests, such as FSH test,  
+        that your doctor might suggest to get a sneak peek into your condition.</p> <br>
+<h3 style="color: #003366;"><u>Symptoms:</u></h3> <br>
+<ul> 
+    <li>Abnormal periods. Bleeding is heavier or lighter than usual.</li> 
+    <li>Irregular periods. The number of days in between each period varies each month.</li> 
+    <li>No periods. You have never had a period, or periods suddenly stop.</li> 
+    <li>Painful periods. Back pain, pelvic pain, and cramping may happen.</li> 
+</ul> <br>
+ 
+<h3 style="color: #003366;"><u>Causes:</u></h3> <br>
+<ul> 
+    <li>Ovulation disorders due to variations in hormones</li> 
+    <li>Uterine abnormalities</li> 
+    <li>Endometriosis - thickening of the Uterine walls</li> 
+    <li>Overweight</li> 
+    <li>Infections that are sexually transmitted</li> 
+    <li>Being exposed to certain types of chemicals</li> 
+</ul> <br>
+ 
+<h3 style="color: #003366;"><u>Treatment:</u></h3> <br>
+<p>There are 3 main types of fertility treatment:</p> 
+<ul> 
+<li>Medicines</li> 
+<li>Urgical procedures</li> 
+<li>Assisted conception – including intrauterine insemination (IUI) and in vitro fertilisation (IVF)</li> 
+</ul><br> 
+ 
+<h3 style="color: #003366;"><u> Medicines:</u></h3> <br>
+<p>Common fertility medicines include:</p> <br>
+<ul> 
+    <li>Clomifene – encourages the monthly release of an egg (ovulation) in women who do not  
+        ovulate regularly or cannot ovulate at all</li> 
+    <li>Tamoxifen – an alternative to clomifene that may be offered if you have ovulation problems</li> 
+    <li>Metformin – is particularly beneficial for women who have polycystic ovary syndrome (PCOS)</li> 
+    <li>Gonadotrophins – can help stimulate ovulation in women, and may also improve fertility in men</li> 
+    <li>Gonadotrophin – releasing hormone and dopamine agonists – other types of medicine prescribed to encourage ovulation in women</li> 
+</ul> <br>
+<p>Some of these medicines may cause side effects, such as nausea, vomiting, headaches and hot flushes.<br> 
+    Speak to your doctor for more information about the possible side effects of specific medicines.<br> 
+    Medicine that stimulates the ovaries is not recommended for women with unexplained infertility because it has not been found to increase their chances of getting pregnant. 
+    </p> <br>
+    <h2 style="color:#003366;">Fallopian tube surgery</h2> <br>
+<p>If your fallopian tubes have become blocked or scarred, you may need surgery to repair them.<br> 
+    Surgery can be used to break up the scar tissue in your fallopian tubes, making it easier for eggs to pass through them.<br> 
+    The success of surgery will depend on the extent of the damage to your fallopian tubes.<br> 
+    Possible complications from tubal surgery include an ectopic pregnancy, which is when the fertilised egg
+implants outside the womb.</p><br> 
+<h2 style="color:#003366;">Endometriosis, fibroids and PCOS</h2> <br>
+<p> 
+    Endometriosis is when parts of the womb lining start growing outside the womb.<br> 
+Laparoscopic surgery is often used to treat endometriosis by destroying or removing fluid-filled sacs called cysts.<br> 
+It may also be used to remove submucosal fibroids, which are small growths in the womb.<br> 
+If you have polycystic ovary syndrome (PCOS), a minor surgical procedure called laparoscopic ovarian drilling can be used if  
+ medicine has not worked.<br> 
+This involves using either heat or a laser to destroy part of the ovary. 
+</p> <br>
+ 
+<h2 style="color: #003366;"> Correcting an epididymal blockage and surgery to retrieve sperm</h2> <br>
+<p> 
+    The epididymis is a coil-like structure in the testicles that helps store and transport sperm.<br> 
+Sometimes the epididymis becomes blocked, preventing sperm from being ejaculated normally. If this is causing infertility,  
+surgery can be used to correct the blockage.<br> 
+Surgical extraction of sperm may be an option if you: 
+</p> <br>
+<ul> 
+    <li>have an obstruction that prevents the release of sperm</li> 
+    <li>were born without the tube that drains the sperm from the testicle (vas deferens)</li> 
+    <li>have had a vasectomy or a failed vasectomy reversal<br> 
+        Both operations take a few hours and are done under local anaesthetic as outpatient procedures.<br> 
+        You'll be advised on the same day about the quality of the tissue or sperm collected.<br> 
+        Any sperm will be frozen and placed in storage for use at a later stage. 
+        </li> 
+</ul> 
+ <br>
+<h2 style="color: #003366;">Assisted conception </h2> <br>
+<h4 style="color:#003366;">Intrauterine insemination (IUI)</h4> <br>
+<p> 
+    Intrauterine insemination (IUI), also known as artificial insemination, involves inserting sperm into the womb via a thin plastic tube passed through the cervix. 
+Sperm is first collected and washed in a fluid. The best quality specimens (the fastest moving) are selected. 
+</p> <br>
+<h3 style="color:#003366 ;"> In vitro fertilisation (IVF)</h3> <br>
+<p> 
+    In vitro fertilisation (IVF), is when an egg is fertilised outside the body.  
+    Fertility medicine is taken to encourage the ovaries to produce more eggs than usual. 
+Eggs are removed from the ovaries and fertilised with sperm in a laboratory.  
+A fertilised egg (embryo) is then returned to the womb to grow and develop. 
+ 
+</p> <br>
+<h3 style="color: #003366;">Egg and sperm donation </h3> <br>
+ <p> 
+    If you or your partner has an infertility problem, you may be able to receive eggs or  
+    sperm from a donor to help you conceive. Treatment with donor eggs is usually done using IVF. 
+    Anyone who registered to donate eggs or sperm after 1 April 2005 can no longer remain anonymous 
+     and must provide information about their identity.<br> 
+    This is because a child born as a result of donated eggs or sperm is legally entitled to 
+     find out the identity of the donor when they become an adult (at age 18). 
+ </p>  <br>
+ </div>  
+</body> 
+</html>

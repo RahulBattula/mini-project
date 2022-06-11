@@ -1,0 +1,200 @@
+{% load static %}
+{% block main-content %}
+<html>
+<head>
+<meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>contact</title>
+<link rel="stylesheet" href="style.css">
+ <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">  
+<style>
+body
+    {font-family: Arial, Helvetica, sans-serif;
+      background:linear-gradient(to top,rgba(0,0,0,0.6)50%,rgba(0,0,0,0.6)50%), url(imag.jpg);
+    
+    background-size:100%;
+    background-repeat: no-repeat;
+    font-family:sans-serif;
+    color:white;
+    }
+* 
+{box-sizing: border-box;}
+.container
+    {
+      margin:1% 15% 0% 15%;
+    font-size:25px;
+    font-family:Times New Roman;
+    margin-left: 25%;
+     margin-right: 25%;   
+    }
+input[type=text],input[type=email], textarea {
+  width: 100%;
+  padding: 8px;
+  background-color: #804d00;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  font-size:20px;
+  color:white;
+  box-sizing: border-box;
+  margin-top: 6px;
+  margin-bottom: 16px;
+  resize: vertical;
+}
+
+input[type=submit] {
+  background-color: black;
+  color: white;
+    font-size: 20px;
+  padding:15px;
+  border: none;
+font-family: Times New Roman;;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+input[type=submit]:hover {
+  background-color:#804d00 ;
+}
+
+.container {
+  border-radius: 20px;
+  background-color: black;
+  padding: 20px;
+}
+
+
+
+
+
+*
+{
+    padding: 0;
+    margin:0;
+     box-sizing: border-box;
+}
+
+.menu{
+    background:black;
+    text-align: center;
+}
+.menu ul
+{
+    display:inline-flex;
+    list-style:none;
+     color: #fff;
+}
+.menu ul li
+{
+    width: 150px;
+    margin: 10px;
+    padding: 10px;
+   
+}
+.menu ul li a
+{
+    text-decoration: none;
+    height:20px;
+    color: #fff;
+}
+ .menu ul li:hover{
+    background: #803300;
+    border-radius:35px;
+   
+}
+.menu .fa
+{
+    margin-right: 8px;
+}
+.submenu
+{
+    display: none;
+    
+}
+.menu ul li:hover .submenu
+{
+    display: block;
+    position: absolute;
+    background:  #b32400;
+    margin-top: 15px;
+    margin-left: -15px;
+    border-radius:30px;
+}
+
+
+.menu ul li:hover .submenu ul
+{
+    display:block;
+    margin: 10px;
+}
+.menu ul li:hover .submenu ul li
+{
+    width: 200px;
+    padding: 10px;
+    border-bottom: 1px dotted #fff;
+    background:transparent;
+    border-radius: 0;
+    text-align: left;
+    font-size: 17px;
+}
+.menu ul li:hover .submenu ul li:last-child
+{
+    border-bottom: none;
+}
+.menu ul li:hover .submenu ul li a:hover{
+    color:black ;
+}
+.submenu-1
+{
+    display:none;
+}
+.hover-me:hover .submenu-1
+{
+    position: absolute;
+    display: block;
+    margin-top: 0px;
+    margin-left: 140px;
+    background: rgb(10,30,20);
+}
+
+ 
+    
+}
+</style>
+
+</head>
+<body>
+<div class="menu">
+ <ul>
+    <li><i class="fa fa-home" aria-hidden="true"></i><a href="home.html">HOME</a></li>
+
+    <li><a href="index.html"><i class="fa fa-phone"></i>CONTACT</a></li>
+ </ul>
+</div>
+<br>
+<div style="background-image:url('{% static 'images/imag.jpg' %}'}">
+<h1 style="font-size:35px;text-align:center;font-family:Times New Roman">CONTACT US</h1><br>
+<b style="font-size:25px;font-family:Times New Roman;margin:0% 0% 0% 15%">Got a question?&emsp; We'd love to hear from you.&emsp;Send us a message and we'll respond as soon as possible.</b>
+<div class="container" style="background-image:url('{% static 'images/imag.jpg' %}'}">
+  <form action="" method="post">
+   {% csrf_token %}
+
+
+    <label for="fname">First Name</label><br>
+    <input type="text" id="fname" name="firstname" placeholder="Your name.."><br>
+
+    
+
+     <label for="mail">Email</label><br>
+    <input type="email" id="mail" name="mail" placeholder="Your Email.."><br>
+
+
+    <label for="msg">Message</label><br>
+    <textarea id="msg" name="msg" placeholder="Write something.." style="height:200px"></textarea><br>
+
+    <input style="margin-left: 43%; " type="submit" value="SUBMIT">
+  </form>
+</div></div>
+</body>
+</html>
+{% endblock main-content %}

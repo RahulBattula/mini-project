@@ -1,0 +1,290 @@
+{% load static %}
+<html>
+<head>
+<meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>home</title>
+<link rel="stylesheet" href="style.css">
+ <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">   
+<style>
+body{
+  font-family:sans-serif;
+  }
+.inter
+  {
+    margin:0% 15% 0% 15%;
+    font-size:22px;
+    font-family:Times New Roman;
+    
+  }
+   
+   
+*
+{
+    padding: 0;
+    margin:0;
+     box-sizing: border-box;
+}
+
+.menu{
+    background:black;
+    text-align: center;
+}
+
+
+
+.menu ul
+{
+    display:inline-flex;
+    list-style:none;
+     color: #fff;
+     
+}
+.menu ul li
+{
+    width: 150px;
+    margin: 5px;
+    padding: 5px;
+   font-size:20px;
+   
+}
+.menu ul li a
+{
+    text-decoration: none;
+    height:10px;
+    font-size:16px;
+    color: #fff;
+    
+    
+}
+ .menu ul li:hover{
+    background: cadetblue;
+    border-radius:10px;
+   
+}
+.menu .fa
+{
+    margin-right: 6px;
+    
+}
+.submenu
+{
+    display: none;
+    
+}
+.menu ul li:hover .submenu
+{
+    display: block;
+    position: absolute;
+    background: cadetblue ;
+    margin-top: 15px;
+    margin-left: -15px;
+    border-radius:20px;
+}
+
+
+.menu ul li:hover .submenu ul
+{
+    display:block;
+    margin: 0px;
+    padding:0px;
+}
+.menu ul li:hover .submenu ul li
+{
+    width: 300px;
+
+    border-bottom: 1px dotted #fff;
+    background:transparent;
+    border-radius: 0;
+    text-align: left;
+    font-size: 2px;
+   padding:10px;
+}
+
+.menu ul li:hover .submenu ul li:last-child
+{
+    border-bottom: none;
+}
+.menu ul li:hover .submenu ul li a:hover{
+    color:black ;
+}
+.submenu-1
+{
+    display:none;
+}
+.hover-me:hover .submenu-1
+{
+    position: absolute;
+    display: block;
+    margin-top: 0px;
+    margin-left: 140px;
+    background: rgb(10,30,20);
+}
+#google_translate_element select{
+ background:#f6edfd;
+ color:#383ffa;
+ border: none;
+ border-radius:3px;
+ padding:6px 8px;
+ }
+ .goog-logo-link{
+   display:none!important;
+  }
+ .goog-te-gadget{
+ color:transparent!important;
+ } 
+ .goog-te-banner-frame{
+ display:none !important;
+ }
+ 
+ #goog-gt-tt, .goog-te-balloon-frame{display: none !important;}
+.goog-text-highlight { background: none !important; box-shadow: none !important;}
+
+</style>
+</head>
+<body>
+<div class="navbar">
+<div class="menu">
+ <ul>
+  <div class="logo">
+  <img src="{% static 'images/logo.png' %}" style="height:60px;width:170px;">
+  </div>
+    <li ><i class="fa fa-home" aria-hidden="true"></i><a href="home.html">HOME</a></li>
+    <li><a href="#"><i class="fa fa-book"></i>EDUCATION</a>
+     <div class="submenu">
+         <ul>
+             <li><a href="intermediate.html">Intermediate</a></li>
+             
+             <li><a href="diploma.html">Diploma/Polytechnic</a></li>
+             <li><a href="iti.html">ITI Courses</a></li>
+             <li><a href="para.html">Paramedical Courses</a></li>
+             <li><a href="vocational.html">Vocational Courses</a></li>
+         </ul>
+     </div>
+     </li>
+     <li><a href="#"><i class="fa fa-stethoscope"></i>HEALTH</a>
+     <div class="submenu">
+         <ul>
+             <li><a href="mens.html">Menstruation Problems</a></li>
+            <li><a href="{% url 'fertility' %}">Fertility Problems</a></li>
+             <li><a href="thyroid">Thyroid Problems</a></li>
+         
+             <li><a href="cancer">Breast Cancer</a></li>
+             <li><a href="dep.html">Depression</a></li>
+           
+         </ul>
+     </div>
+     </li>
+    <li><a href="security.html"><i class="fa fa-shield"></i>SECURITY</a></li>
+    <li><a href="about.html"><i class="fa fa-clone"></i>ABOUT US</a></li>
+    <li><a href="index.html"><i class="fa fa-phone"></i>CONTACT</a></li>
+    
+    <div id="google_translate_element" ></div>
+<script type="text/javascript">
+function googleTranslateElementInit() {
+  new google.translate.TranslateElement({pageLanguage: 'en'}, 'google_translate_element');
+}
+</script>
+<script type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+</div>
+</div>
+
+<div class="inter">
+ <h1 style="margin-top:5%;font-size:35px;color:#003366;">COURSES IN INTERMEDIATE</h1><br>
+<h2 style="color:#003366;">• M.P.C</h2><br>
+<b style="color:#003366;">Course Name:</b>M.P.C<br><br>
+    <b style="color:#003366;">Subjects:</b>MATHS PHYSICS CHEMISTRY<br><br>
+    <b style="color:#003366;">Eligibility:</b>class X<br><br>
+    <b style="color:#003366;">Duration:</b>2 Years<br><br>
+    <b style="color:#003366;">Oppurtunities:</b><br><br>
+•	Architecture<br>
+•	Engineering<br>
+•	Architecture<br>
+•	Merchant Navy<br>
+•	Commercial Pilot<br>
+•	Bachelor of Science<br>
+•	National Defense Services-Indian Navy Officer, Indian Air Force <br>
+•	Railway Apprentice Exam<br>
+•	Business Administration and Management Studies<br><br>
+
+    
+<h2 style="color:#003366;">• Bi.P.C</h2><br>
+<b style="color:#003366;">Course Name:</b>Bi.P.C<br><br>
+<b style="color:#003366;">Subjects:</b>BIOLOGY(Botany & Zoology)  PHYSICS CHEMISTRY<br><br>
+<b style="color:#003366;">Eligibility:</b>class X<br><br>
+<b style="color:#003366;">Duration:</b>2 Years<br><br>
+<b style="color:#003366;">Oppurtunities:</b><br><br>
+•	Doctor of Medicine [MD] (Pathology)<br>
+•	Bachelor of Medicine, Bachelor of Surgery (MBBS)<br>
+•	BSC – Pharmaceutical Courses<br>
+•	BVSc – Veterinary Science<br>
+•	AYUSH Allied Courses<br>
+•	BHMS – Homeopathy<br>
+•	Doctor of Medicine [MD] (Physiology Courses)<br>
+•	Doctor of Medicine [MD] (Biochemistry)<br>
+•	Orthopaedic and Psychotherapy courses<br>
+•	Psychiatry Courses<br>
+•	E.N.T Courses- General Physician or Specialist<br>
+•	Radiodiagnosis Courses- General Physician or Specialist or Doctor of Medicine [MD]<br>
+•	Anesthesiology Courses – General Physician or Specialist<br>
+•	Obstetrics & Gynaecology courses – General Physician or Specialist<br><br>
+    
+    
+<h2 style="color:#003366;">• M.E.C/C.E.C</h2><br>
+<b style="color:#003366;">Course Name:</b>M.E.C/C.E.C<br><br>
+    <b style="color:#003366;">Subjects:</b>M.E.C- Maths  economics Commerce<br>&emsp;&emsp;&emsp;&emsp;
+                  C.E.C  Civics Econocmics commerce
+<br><br>
+    <b style="color:#003366;">Eligibility:</b>class X<br><br>
+    <b style="color:#003366;">Duration:</b>2 Years<br><br>
+    <b style="color:#003366;">Oppurtunities by C.E.C:</b><br><br>
+• BA in Economics<br>
+• BSc Mathematics<br>
+• Bachelor of Business Administration (BBA)<br>
+• Bachelor of Fine Arts (BFA)<br>
+• BA in English Literature<br>
+• Bachelor of Commerce (BCom)<br>
+• Chartered Accountancy (CA)<br>
+• Company Secretary (CS)<br>
+• Bachelor of Journalism and Mass Communication (BJMC)<br>
+• Bachelor of Information Technology<br>
+ <b>Oppurtunities by M.E.C:</b><br><br>
+• Bachelor of Business Administration (BBA)<br>
+• Bachelor of Commerce (B.Com)<br>
+• Bachelor of Arts (Economics)<br>
+• Bachelor of Computer Applications (BCA)<br>
+• Master of Business Administration (MBA)<br>
+• Master of Commerce (M.Com)<br>
+• Master of Arts(Economics)<br><br>
+    
+    
+
+<h2 style="color:#003366;">• H.E.C</h2><br>
+<b style="color:#003366;">Course Name:</b>H.E.C<br><br>
+    <b style="color:#003366;">Subjects:</b>History  economics  Commerce<br><br>
+    <b style="color:#003366;">Eligibility:</b>class X<br><br>
+    <b style="color:#003366;">Duration:</b>2 Years<br><br>
+    <b style="color:#003366;">Oppurtunities:</b><br><br>
+• DIET CET with HEC<br>
+• National Defense Academy<br>
+• BA – MA<br>
+• MA Economics<br>
+• BA- MBA<br>
+• Famous Business School<br>
+• B. Ed<br>
+• IPE<br>
+• Law with HEC<br>
+• BBA<br>
+• Jewelry design courses<br>
+• Mudra Institutes<br>
+• Media and Mass Communication<br>
+• Human Resource Management (HRM)<br>
+• MHRM<br>
+• Hospitality Management<br>
+• Fine arts<br>
+• Competitive exams<br>
+
+</div>
+</body>
+</html>

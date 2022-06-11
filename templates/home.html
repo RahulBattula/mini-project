@@ -1,0 +1,407 @@
+<!doctype html>
+{% load static %}
+
+<html>
+<head>
+<meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>home</title>
+<link rel="stylesheet" href="style.css">
+ <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+ 
+<style>
+body
+{
+    background:linear-gradient(to top,rgba(0,0,0,0.6)50%,rgba(0,0,0,0.6)50%), url("{% static 'images/back.jpg' %}");
+    
+    background-size:100%;
+    background-repeat:repeat;
+    font-family:sans-serif;
+    
+   
+}
+*
+{
+    padding: 0;
+    margin:0;
+     box-sizing: border-box;
+}
+button {
+  margin-top: 20px;
+  background: sandybrown;
+  height: 35px;
+  width: 65px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-weight: 900;
+  transition: 0.5s;;
+}
+
+button:hover {
+  box-shadow: none;
+}
+.menu{
+    background:black;
+    text-align: center;
+}
+
+
+
+.menu ul
+{
+    display:inline-flex;
+    list-style:none;
+     color: #fff;
+     
+}
+.menu ul li
+{
+    width: 150px;
+    margin: 5px;
+    padding: 5px;
+   font-size:20px;
+   
+}
+.menu ul li a
+{
+    text-decoration: none;
+    height:10px;
+    font-size:16px;
+    color: #fff;
+    
+    
+}
+ .menu ul li:hover{
+    background: cadetblue;
+    border-radius:10px;
+   
+}
+.menu .fa
+{
+    margin-right: 6px;
+    
+}
+.submenu
+{
+    display: none;
+    
+}
+.menu ul li:hover .submenu
+{
+    display: block;
+    position: absolute;
+    background: cadetblue ;
+    margin-top: 15px;
+    margin-left: -15px;
+    border-radius:20px;
+}
+
+
+.menu ul li:hover .submenu ul
+{
+    display:block;
+    margin: 0px;
+    padding:0px;
+}
+.menu ul li:hover .submenu ul li
+{
+    width: 300px;
+
+    border-bottom: 1px dotted #fff;
+    background:transparent;
+    border-radius: 0;
+    text-align: left;
+    font-size: 2px;
+   padding:10px;
+}
+
+.menu ul li:hover .submenu ul li:last-child
+{
+    border-bottom: none;
+}
+.menu ul li:hover .submenu ul li a:hover{
+    color:black ;
+}
+.submenu-1
+{
+    display:none;
+}
+.hover-me:hover .submenu-1
+{
+    position: absolute;
+    display: block;
+    margin-top: 0px;
+    margin-left: 140px;
+    background: rgb(10,30,20);
+}
+
+.mySlides {display: none}
+img {vertical-align: middle;}
+
+/* Slideshow container */
+.slideshow-container {
+  max-width: 1000px;
+  position: relative;
+  margin: auto;
+}
+
+/* Next & previous buttons */
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  padding: 16px;
+  margin-top: -22px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+}
+
+/* Caption text */
+.text {
+  color: #f2f2f2;
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+  font-weight:600;
+  font-family:Comic Sans MS;
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover {
+  background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+/* On smaller screens, decrease text size */
+@media only screen and (max-width: 300px) {
+  .prev, .next,.text {font-size: 11px}
+}
+
+.slideshow-container
+{
+margin-top:1%;
+}
+.text
+{
+ font-size:25px;
+ 
+}
+
+.quote{
+ margin-top:2%;
+  color:#800000;
+  text-align:center;
+  font-family:New Century Schoolbook, TeX Gyre Schola, serif;
+  font-size:30px;
+  font-weight:900;
+}
+
+.quote1{
+  color:#80ffff;
+  text-align:center;
+  font-family:cursive;
+  font-size:20px;
+  font-weight:900;
+}
+.hello-msg{
+  font-family: 'Trebuchet MS';
+  color: floralwhite;
+  text-transform: uppercase;
+}
+
+#google_translate_element select{
+ background:#f6edfd;
+ color:#383ffa;
+ border: none;
+ border-radius:3px;
+ padding:6px 8px;
+ }
+ .goog-logo-link{
+   display:none!important;
+  }
+ .goog-te-gadget{
+ color:transparent!important;
+ } 
+ .goog-te-banner-frame{
+ display:none !important;
+ }
+ 
+ #goog-gt-tt, .goog-te-balloon-frame{display: none !important;}
+.goog-text-highlight { background: none !important; box-shadow: none !important;}
+</style>
+
+    
+</head>
+<body>
+<div class="navbar">
+<div class="menu">
+ <ul>
+  <div class="logo">
+  <img src="{% static 'images/logo.png' %}" style="height:60px;width:170px;">
+  </div>
+    <li ><i class="fa fa-home" aria-hidden="true"></i><a href="home.html">HOME</a></li>
+    <li><a href="#"><i class="fa fa-book"></i>EDUCATION</a>
+     <div class="submenu">
+         <ul>
+             <li><a href="intermediate.html">Intermediate</a></li>
+             
+             <li><a href="diploma.html">Diploma/Polytechnic</a></li>
+             <li><a href="iti.html">ITI Courses</a></li>
+             <li><a href="para.html">Paramedical Courses</a></li>
+             <li><a href="vocational.html">Vocational Courses</a></li>
+         </ul>
+     </div>
+     </li>
+     <li><a href="#"><i class="fa fa-stethoscope"></i>HEALTH</a>
+      <div class="submenu">
+          <ul>
+              <li><a href="mens.html">Menstruation Problems</a></li>
+              <li><a href="{% url 'fertility' %}">Fertility Problems</a></li>
+               <li><a href="{% url 'thy' %}">Thyroid Problems</a></li>
+              <li><a href="{% url 'cancer' %}">Breast Cancer</a></li>
+              <li><a href="dep.html">Depression</a></li>
+            
+          </ul>
+      </div>
+      </li>
+     <li><a href="security.html"><i class="fa fa-shield"></i>SECURITY</a></li>
+     <li><a href="about.html"><i class="fa fa-clone"></i>ABOUT US</a></li>
+     <li><a href="index.html"><i class="fa fa-phone"></i>CONTACT</a></li>
+
+    <div id="google_translate_element" ></div>
+<script type="text/javascript">
+function googleTranslateElementInit() {
+  new google.translate.TranslateElement({pageLanguage: 'en'}, 'google_translate_element');
+}
+</script>
+<script type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+</div>
+</div>
+<center><h3><span class="hello-msg">Hello, {{request.user}}</span></h3></center>
+<center><h2><button type="submit"><span ><a href="{% url 'logout' %}">Logout</a></span></button></h2></center>
+
+        
+<div class="quote">
+<h1 style="color: lavender;">IT IS HARD TO BE </h1>
+<h1 style="color: lavender;">A WOMEN</h1>
+</div>
+<div class="quote1">
+<h2 style="color: yellow;">You Must Think Like A Man, Act Like A</h2>
+<h2 style="color: yellow;">Lady, Look Like A Young Girl, And Work</h2>
+<h2 style="color: yellow;">Like A Horse</h2>
+</div>
+
+<div class="slideshow-container">
+
+<div class="mySlides fade">
+  <div class="numbertext">1 / 3</div>
+  <img src="{% static 'images/savithibai.webp' %}" style="width:92%;height:500px;margin:4%;border-radius: 15px;">
+  <div class="text">Savitribai Phule: Women's Rights Activist (1831 - 1897)</div>
+</div>
+
+<div class="mySlides fade">
+  <div class="numbertext">2 / 3</div>
+  <img src="{% static 'images/rudrama.webp' %}" style="width:92%;height:500px;margin:4%;border-radius: 15px;">
+  <div class="text">Rudrama Devi: Monarch Ruler of Kakatiya Dynasty (12th Century)</div>
+</div>
+
+<div class="mySlides fade">
+  <div class="numbertext">3 / 3</div>
+  <img src="{% static 'images/saina.jpg' %}" style="width:92%;height:500px;margin:4%;border-radius: 15px;">
+  <div class="text">Saina Nehwal: Indian professional badminton player (17 March 1990)</div>
+</div>
+
+<a class="prev" onclick="plusSlides(-1)">❮</a>
+<a class="next" onclick="plusSlides(1)">❯</a>
+
+</div>
+<br>
+
+<div style="text-align:center">
+  <span class="dot" onclick="currentSlide(1)"></span> 
+  <span class="dot" onclick="currentSlide(2)"></span> 
+  <span class="dot" onclick="currentSlide(3)"></span> 
+</div>
+
+<script>
+let slideIndex = 1;
+showSlides(slideIndex);
+
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  let i;
+  let slides = document.getElementsByClassName("mySlides");
+  let dots = document.getElementsByClassName("dot");
+  if (n > slides.length) {slideIndex = 1}    
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";  
+  }
+  for (i = 0; i < dots.length; i++) {
+    dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";  
+  dots[slideIndex-1].className += " active";
+}
+
+</script>
+
+</body>
+</html>

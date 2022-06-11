@@ -1,0 +1,345 @@
+{% load static %}
+
+
+<html>
+<head>
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>security</title>
+<link rel="stylesheet" href="style.css">
+ <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">   
+<style>
+  .div1
+  {
+    margin:0% 15% 0% 15%;
+    font-size:22px;
+    font-family:Times New Roman;
+    
+  }
+  body{
+  font-family:sans-serif;
+  }
+  
+  *
+{
+    padding: 0;
+    margin:0;
+     box-sizing: border-box;
+}
+
+.menu{
+    background:black;
+    text-align: center;
+}
+
+
+
+.menu ul
+{
+    display:inline-flex;
+    list-style:none;
+     color: #fff;
+     
+}
+.menu ul li
+{
+    width: 150px;
+    margin: 5px;
+    padding: 5px;
+   font-size:20px;
+   
+}
+.menu ul li a
+{
+    text-decoration: none;
+    height:10px;
+    font-size:16px;
+    color: #fff;
+    
+    
+}
+ .menu ul li:hover{
+    background: cadetblue;
+    border-radius:10px;
+   
+}
+.menu .fa
+{
+    margin-right: 6px;
+    
+}
+.submenu
+{
+    display: none;
+    
+}
+.menu ul li:hover .submenu
+{
+    display: block;
+    position: absolute;
+    background: cadetblue ;
+    margin-top: 15px;
+    margin-left: -15px;
+    border-radius:20px;
+}
+
+
+.menu ul li:hover .submenu ul
+{
+    display:block;
+    margin: 0px;
+    padding:0px;
+}
+.menu ul li:hover .submenu ul li
+{
+    width: 300px;
+
+    border-bottom: 1px dotted #fff;
+    background:transparent;
+    border-radius: 0;
+    text-align: left;
+    font-size: 2px;
+   padding:10px;
+}
+
+.menu ul li:hover .submenu ul li:last-child
+{
+    border-bottom: none;
+}
+.menu ul li:hover .submenu ul li a:hover{
+    color:black ;
+}
+.submenu-1
+{
+    display:none;
+}
+.hover-me:hover .submenu-1
+{
+    position: absolute;
+    display: block;
+    margin-top: 0px;
+    margin-left: 140px;
+    background: rgb(10,30,20);
+}
+#google_translate_element select{
+ background:#f6edfd;
+ color:#383ffa;
+ border: none;
+ border-radius:3px;
+ padding:6px 8px;
+ }
+ .goog-logo-link{
+   display:none!important;
+  }
+ .goog-te-gadget{
+ color:transparent!important;
+ } 
+ .goog-te-banner-frame{
+ display:none !important;
+ }
+ 
+ #goog-gt-tt, .goog-te-balloon-frame{display: none !important;}
+.goog-text-highlight { background: none !important; box-shadow: none !important;}
+    
+</style>
+</head>
+<body>
+<div class="navbar">
+<div class="menu">
+ <ul>
+  <div class="logo">
+  <img src="{% static 'images/logo.png' %}" style="height:60px;width:170px;">
+  </div>
+    <li ><i class="fa fa-home" aria-hidden="true"></i><a href="home.html">HOME</a></li>
+    <li><a href="#"><i class="fa fa-book"></i>EDUCATION</a>
+     <div class="submenu">
+         <ul>
+             <li><a href="intermediate.html">Intermediate</a></li>
+             
+             <li><a href="diploma.html">Diploma/Polytechnic</a></li>
+             <li><a href="iti.hmtl">ITI Courses</a></li>
+             <li><a href="para.html">Paramedical Courses</a></li>
+             <li><a href="vocational.html">Vocational Courses</a></li>
+         </ul>
+     </div>
+     </li>
+     <li><a href="#"><i class="fa fa-stethoscope"></i>HEALTH</a>
+     <div class="submenu">
+         <ul>
+             <li><a href="mens.html">Menstruation Problems</a></li>
+             <li><a href="{% url 'fertility' %}">Fertility Problems</a></li>
+             <li><a href="{% url 'thy' %}">Thyroid Problems</a></li>
+             <li><a href="{% url 'cancer' %}">Breast Cancer</a></li>
+             <li><a href="dep.html">Depression</a></li>
+           
+         </ul>
+     </div>
+     </li>
+    <li><a href="security.html"><i class="fa fa-shield"></i>SECURITY</a></li>
+    <li><a href="about.html"><i class="fa fa-clone"></i>ABOUT US</a></li>
+    <li><a href="index.html"><i class="fa fa-phone"></i>CONTACT</a></li>
+    
+    <div id="google_translate_element" ></div>
+<script type="text/javascript">
+function googleTranslateElementInit() {
+  new google.translate.TranslateElement({pageLanguage: 'en'}, 'google_translate_element');
+}
+</script>
+<script type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+</div>
+</div>
+
+
+  <div class="div1">
+<h2 style="margin-top:5%;color:#003366;">WOMEN SECURITY MOBILE APPLICATIONS</h2><br>
+<h3 style="color:#003366">DISHA APP</h3><br>
+      <img src="{% static 'images/disha.jpg' %}" height="400px" width="700px"><br><p>
+    <h4 style="color:#003366">How the Disha App works,what are the benefits, how to download</h4><br>
+    <p>Disha App: The AP government is taking strict measures for the safety of women. Direction app launched to help women at risk. Let's take a look at the details of how the Direction app works and how to download it.<br><br>
+
+
+The Disha Act enacted by the AP government is showing the expected results. At the same time, the Direction app, which started to help women at risk, is gaining popularity. Launched in February 2020, the Direction app has already been downloaded by 1.7 million people. Police have taken action on thousands of phone calls and messages through the Direction app. FIRs have been registered in 160 cases. Nearly a thousand women and girls were rescued by the Direction app from accidents. Now a special campaign has been launched to bring the Direction app closer to women.</p><br>
+    <h4 style="color:#003366">How Disha App Works?</h4><br>
+    <p>Arrangements will be made to send immediate information to five family members or friends along with the police when young women and women are in danger. There is a Track my Travel option during the journey. Anukshan tracks if you enter the destination to join. If the vehicle goes astray, the information is immediately relayed to the direction command control room as well as relatives and friends. The Direction app has emergency numbers like 100 and 112 as well as details of police stations, hospitals, maternity centers, blood banks, trauma care centers and medical shops. Through the push button option from Command Control the police give advice and instructions to everyone at the same time. If you do not have time in a catastrophic situation, just shake the phone loudly. The message will reach the police. Vigilant police call back. If the phone does not respond, the police will reach the victim's location via GPS Tracking with the help of the mobile data terminal in the vehicle.</p><br><br>
+ <h3 style="color:#003366">SOS ALERT APP</h3><br>
+      <img src="{% static 'images/SOS-Alert.jpg' %}" height="400px" width="700px"><br><p>
+    
+    SOS Alert is an emergency app which helps you out whenever your safety is at risk by reaching out to your emergency contacts and providing them with your current location.<br><br>
+
+<h5 style="color:#003366">FEATURES</h5><br>
+
+1. No Ads<br>
+2. Very basic user interface and easy to use<br>
+3. Dark theme<br>
+4. In case of an emergency, a link of your current location on Google Maps is sent to your emergency contacts so that they can locate you accurately<br>
+5. The Emergency Contacts and the SOS Message are stored locally on your device, therefore no one other than you have access to it.<br>
+6. You can edit the SOS Message and add other useful information about yourself<br>
+7. SOS Widget for sending SOS Alert in just one tap<br><br>
+
+<h5  style="color:#003366">HOW DOES IT WORK?</h5><br>
+
+1. Whenever you are in an emergency, you need to press the SOS Widget or the SOS button in the app<br>
+2. As soon as you press the button/widget, a countdown of 3 seconds starts immediately (you can cancel the SOS Alert if you want to, before the countdown ends)<br>
+3. When the countdown ends, the app fetches your location from the GPS on your device and sends (through SMS) your location along with your SOS Message (which is pre-saved on your device) to the emergency contacts that you have registered in the app<br>
+4. The registered emergency contacts receive your SOS Message and a link of your current location as an SMS from your mobile number<br>
+      <br>
+</p>
+    <h3 style="color:#003366">WOMENSAFETY APP</h3><br>
+      <img src="{% static 'images/womensafety.jpg' %}" height="500px" width="700px"><br><br>
+    <h4 style="color:#003366">How the WomenSafety App works?</h4><br><br>
+    <p>As the name says, Women Safety app informs your loved ones in case you are in a troubling situation. The app is easy and fast and can send en email to your emergency contacts with your location and 2 pictures and/or a video or audio message.
+
+        You can tap green, orange, and red buttons to inform your emergency contacts about whether you’re safe, in a cautious situation, or in some real danger respectively.</p><br><br>
+
+    <p><h3 style="color:#003366">SHAKE2SAFETY APP</h3><br>
+      <img src="{% static 'images/shake2safety.jpg' %}" height="500px" width="700px"><br><br>
+    <h4 style="color:#003366">How the Shake2Safety App works?</h4><br><br>
+    <p> 1.Personal Safety App / Emergency Alert / SOS app<br>
+
+2. Works even on locked screen.<br>
+
+3. Works even when there is no internet connection.<br>
+
+4. No Registration required. No root required.<br>
+
+5. Mimic the Galaxy S6's SOS Feature on Any Android Device
+<br><br>
+Shake2Safety is a SOS app that lets you send text messages to emergency contacts, share picture with location and record audio in emergency situations. All this happens by just shaking the phone or pressing power button 4 times.<br>
+
+Alert your family members and friends in an emergency situations with this app.<br><br>
+<h4 style="color:#003366">FEATURES:</h4><br>
+
+
+1. Sending multiple text messages with location to different numbers saved as emergency contacts by shaking your phone or pressing power button 4 times.<br>
+
+2. Sending picture of emergency situation with location to a contact using shareable media.<br>
+
+3. Recording a 4 second audio in your device.<br>
+
+4. Knowing your current location by just clicking the button at top right corner of the app.<br>
+
+5. Siren button.<br><br>
+
+<h4 style="color:#003366"> How to Use Shake2safety App:</h4><br>
+
+1. Use the + red sign at the bottom right to set your primary emergency contact.<br>
+
+2. Choose Send SMS/Text message, Call or both options.<br>
+
+3. Choose another number as emergency contact.<br>
+
+4. You can now choose as many contacts for sending Text Message/SMS<br>
+
+5. Note -> By shaking the phone or by pressing power button 4 times, you can send as many Text message/SMS to different phone numbers saved by you but call can be sent to only one contact i.e. your primary contact.<br>
+
+6. Go to preferences in settings to set the Sensitivity (between 10 to 25 for most phones) to avoid sending text message, call or share picture by mistake.<br>
+
+7. Now you can send a Picture of the emergency situation with location to a contact.<br>
+
+8. You can also send picture to a contact using multimedia messaging or MMS via Hangout etc<br>
+
+9. Enable or disable photo sharing from preferences in the settings menu.<br>
+
+10. Saves a 4 second audio recording during a SOS event. Enable or disable this feature from the preferences.<br>
+
+11. Enable or disable power button or shake feature from the preferences.<br>
+</p><br><br>
+<h3 style="color:#003366">BSAFE APP</h3><br>
+      <img src="{% static 'images/bSafe-app.jpg' %}" height="500px" width="700px"><br>
+    <h4 style="color:#003366">How the bSafe App works?</h4><br>
+    <p>Groundbreaking Innovative Features To Keep You Safe
+<br>Bsafe has developed the most advanced safety features to give you peace of mind wherever you or your loved ones are. Voice Activation, Live Streaming, and Automatic Recording will help you stay safe. If you feel unsafe, it’s easy to activate the Fake Call, Timer Alarm, or the Follow Me function.
+
+If you’re in trouble, you can instantly ask for help and your guardians will know where you are and what is happening, with Bsafe you will never walk alone.<br><br>
+ <h4 style="color:#003366">Features:</h4>       
+ 1. SOS Alarm<br>
+When the SOS alarm is activated, audio and video will automatically start to record.<br>
+
+2. Voice Activation<br>
+Simply activate the SOS alarm with your voice even if your cell phone is stowed away.<br>
+
+3.Live Streaming<br>
+Your guardians can see and hear everything that is happening in real time.<br>
+
+4.Recording<br>
+When the SOS alarm is activated, audio and video are automatically recording.<br>
+
+5. Follow Me<br>
+Your friends and family can join your journey virtually via live GPS-tracking.<br>
+
+6. Fake Call<br>
+Get your phone to call you and get out of unpleasant or threatening situations.<br>
+
+7. Guardians<br>
+You can add friends and family as guardians and get peace of mind wherever you are.<br>
+
+8. I'm Here<br>
+Use this feature to check-in and share your location with your selected guardians.<br>
+
+9. Timer Alarm<br>
+Define how long you want Bsafe to follow you, in case of an emergency.<br>
+Define how long you want Bsafe to follow you, in case of an emergency.<br>
+</p><br><br>
+<h3 style="color:#003366">SMART24/7 APP</h3><br>
+      <img src="{% static 'images/smart.png' %}" height="500px" width="700px"><br><br>
+    <h4 style="color:#003366">How the Smart24/7 App works?</h4><br><br>
+    <p>Smart24x7 and innovation are synonymous especially when it comes to smartphones. Smartphones are not only communication and entertainment devices, but a veritable security gadget. Keeping in mind the vulnerability of ladies and school going children it is only natural that they be properly equipped against any sort of harassment. Our safety app for Android phone is an attempt of ensuring safety to women to some extent.<br><br>
+<h4 style="color:#003366">Benefits:</h4> <br>
+Our applications try to offer protection in more than one ways. For sending panic alerts or your whereabouts these applications could be used. Personal safety app for Android phones are designed to take care of all such imminent demands. From sending a panic message to the police or flashing an alert to your primary contacts, these tools take care of all such exigencies. Geographic location of your position is also sent out to your primary contact list. In case your GPRS application fails alerts may always be generated. GPRS app also enables you to locate a service provider coming to you rescue.<br>
+A ‘panic’ activated screen allows you to call the ‘police’, ’ambulance’, and ‘fire’ with single clicks. On activation of ‘panic’ function, you may take photographs and make voice recordings.<br>
+When in emergency always press ‘panic’, then choose service type needed, and lastly click ‘submit’ to complete your sending alert.<br>
+
+These tools are designed to ensure security and safety for our near and dear ones.<br>
+During emergencies a facilitation process is initiated by simple operations.<br>
+Personal safety app for Android phones are designed to offer safety round the clock on all seven days of a week.<br><br>
+<h4 style="color:#003366">How to Download Smart24x7 Applications</h4><br>
+
+User can download the Smart24x7 Application from Google Play.<br>
+Navigate to the app. The details will appear on the screen where you can read about the app’s features.<br>
+Click on it to install the Application in your Mobile Device.<br>
+Tap Accept & download to accept the permissions for the app (or press Back if you don’t want to download) -application will begin downloading immediately.</p><br><br>
+
+</div>
+</body>
+</html>

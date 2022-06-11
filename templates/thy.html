@@ -1,0 +1,241 @@
+{% load static %}
+<html>
+<head>
+<meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Thyroid problems</title>
+<link rel="stylesheet" href="style.css">
+ <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">   
+<style>
+body{
+  font-family:sans-serif;
+  }
+.fert
+ {
+    margin:0% 15% 0% 15%;
+   font-size:22px;
+    font-family:Times New Roman;
+ }
+ *
+{
+    padding: 0;
+    margin:0;
+     box-sizing: border-box;
+}
+
+.menu{
+    background:black;
+    text-align: center;
+}
+
+
+
+.menu ul
+{
+    display:inline-flex;
+    list-style:none;
+     color: #fff;
+     
+}
+.menu ul li
+{
+    width: 150px;
+    margin: 5px;
+    padding: 5px;
+   font-size:20px;
+   
+}
+.menu ul li a
+{
+    text-decoration: none;
+    height:10px;
+    font-size:16px;
+    color: #fff;
+    
+    
+}
+ .menu ul li:hover{
+    background: cadetblue;
+    border-radius:10px;
+   
+}
+.menu .fa
+{
+    margin-right: 6px;
+    
+}
+.submenu
+{
+    display: none;
+    
+}
+.menu ul li:hover .submenu
+{
+    display: block;
+    position: absolute;
+    background: cadetblue ;
+    margin-top: 15px;
+    margin-left: -15px;
+    border-radius:20px;
+}
+
+
+.menu ul li:hover .submenu ul
+{
+    display:block;
+    margin: 0px;
+    padding:0px;
+}
+.menu ul li:hover .submenu ul li
+{
+    width: 300px;
+
+    border-bottom: 1px dotted #fff;
+    background:transparent;
+    border-radius: 0;
+    text-align: left;
+    font-size: 2px;
+   padding:10px;
+}
+
+.menu ul li:hover .submenu ul li:last-child
+{
+    border-bottom: none;
+}
+.menu ul li:hover .submenu ul li a:hover{
+    color:black ;
+}
+.submenu-1
+{
+    display:none;
+}
+.hover-me:hover .submenu-1
+{
+    position: absolute;
+    display: block;
+    margin-top: 0px;
+    margin-left: 140px;
+    background: rgb(10,30,20);
+}
+#google_translate_element select{
+ background:#f6edfd;
+ color:#383ffa;
+ border: none;
+ border-radius:3px;
+ padding:6px 8px;
+ }
+ .goog-logo-link{
+   display:none!important;
+  }
+ .goog-te-gadget{
+ color:transparent!important;
+ } 
+ .goog-te-banner-frame{
+ display:none !important;
+ }
+ 
+ #goog-gt-tt, .goog-te-balloon-frame{display: none !important;}
+.goog-text-highlight { background: none !important; box-shadow: none !important;}
+
+</style>
+</head>
+<body>
+<div class="navbar">
+<div class="menu">
+ <ul>
+  <div class="logo">
+  <img src="{% static 'images/logo.png' %}" style="height:60px;width:170px;">
+  </div>
+    <li ><i class="fa fa-home" aria-hidden="true"></i><a href="home.html">HOME</a></li>
+    <li><a href="#"><i class="fa fa-book"></i>EDUCATION</a>
+     <div class="submenu">
+         <ul>
+             <li><a href="intermediate.html">Intermediate</a></li>
+             
+             <li><a href="diploma.html">Diploma/Polytechnic</a></li>
+             <li><a href="iti.html">ITI Courses</a></li>
+             <li><a href="para.html">Paramedical Courses</a></li>
+             <li><a href="vocational.html">Vocational Courses</a></li>
+         </ul>
+     </div>
+     </li>
+     <li><a href="#"><i class="fa fa-stethoscope"></i>HEALTH</a>
+     <div class="submenu">
+         <ul>
+             <li><a href="mens.html">Menstruation Problems</a></li>
+             <li><a href="{% url 'fertility' %}">Fertility Problems</a></li>
+              <li><a href="{% url 'thy' %}">Thyroid Problems</a></li>
+             <li><a href="{% url 'cancer' %}">Breast Cancer</a></li>
+             <li><a href="dep.html">Depression</a></li>
+           
+         </ul>
+     </div>
+     </li>
+    <li><a href="security.html"><i class="fa fa-shield"></i>SECURITY</a></li>
+    <li><a href="about.html"><i class="fa fa-clone"></i>ABOUT US</a></li>
+    <li><a href="index.html"><i class="fa fa-phone"></i>CONTACT</a></li>
+    
+    <div id="google_translate_element" ></div>
+<script type="text/javascript">
+function googleTranslateElementInit() {
+  new google.translate.TranslateElement({pageLanguage: 'en'}, 'google_translate_element');
+}
+</script>
+<script type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+</div>
+</div>
+<br>
+<div class="fert">
+    <h1 style="color:#003366">Thyroid Disease</h1>
+   <p>Thyroid disease is twice as prevalent in women as in men and is common among women of child-bearing age (18-35 years).5 Women generally have hypothyroidism (low thyroid hormone levels), in which the metabolism slows down. Symptoms include weight gain, feeling sluggish and tired, etc. On the other side, high thyroid levels can also cause early onset of menopause, before 40 years or in the early 40s.<br>
+
+Besides, pregnancy can raise the level of thyroid hormones in the blood and almost 5% to 10% of women suffer from postpartum thyroiditis, which occurs within 1 year after giving birth.
+</p> <br>
+    <h3 style="color:#003366">What is thyroid disease?</h3>
+    <p>Thyroid disease is a general term for a medical condition that keeps your thyroid from making the right amount of hormones. Your thyroid typically makes hormones that keep your body functioning normally. When the thyroid makes too much thyroid hormone, your body uses energy too quickly. This is called hyperthyroidism. Using energy too quickly will do more than make you tired — it can make your heart beat faster, cause you to lose weight without trying and even make you feel nervous. On the flip-side of this, your thyroid can make too little thyroid hormone. This is called hypothyroidism. When you have too little thyroid hormone in your body, it can make you feel tired, you might gain weight and you may even be unable to tolerate cold temperatures.<br>
+
+These two main disorders can be caused by a variety of conditions. They can also be passed down through families (inherited).</p><br>
+    <h3 style="color:#003366">Causes of Thyroid Disease</h3>
+    <p>The two main types of thyroid disease are hypothyroidism and hyperthyroidism. Both conditions can be caused by other diseases that impact the way the thyroid gland works.<br>
+
+Conditions that can cause hypothyroidism include:</p>
+    <ul> 
+    <li><h4 style="color:#003366">Thyroiditis:</h4> This condition is an inflammation (swelling) of the thyroid gland. Thyroiditis can lower the amount of hormones your thyroid produces.</li> 
+    <li><h4 style="color:#003366">Hashimoto’s thyroiditis:</h4> A painless disease, Hashimoto’s thyroiditis is an autoimmune condition where the body’s cells attack and damage the thyroid. This is an inherited condition.</li> 
+        <li><h4 style="color:#003366">Postpartum thyroiditis:</h4> This condition occurs in 5% to 9% of women after childbirth. It’s usually a temporary condition.</li> 
+        <li><h4 style="color:#003366">Iodine deficiency:</h4> Iodine is used by the thyroid to produce hormones. An iodine deficiency is an issue that affects several million people around the world.</li> 
+        <li><h4 style="color:#003366">A non-functioning thyroid gland:</h4> Sometimes, the thyroid gland doesn’t work correctly from birth. This affects about 1 in 4,000 newborns. If left untreated, the child could have both physical and mental issues in the future. All newborns are given a screening blood test in the hospital to check their thyroid function.</li>  
+</ul> <br>
+    <p>Conditions that can cause hyperthyroidism include:</p><br>
+    <ul>
+        <li><h4 style="color:#003366">Graves’ disease: </h4>In this condition the entire thyroid gland might be overactive and produce too much hormone. This problem is also called diffuse toxic goiter (enlarged thyroid gland).</li>
+        <li><h4 style="color:#003366">Nodules:</h4> Hyperthyroidism can be caused by nodules that are overactive within the thyroid. A single nodule is called toxic autonomously functioning thyroid nodule, while a gland with several nodules is called a toxic multi-nodular goiter.</li>
+        <li><h4 style="color:#003366">Thyroiditis:</h4> This disorder can be either painful or not felt at all. In thyroiditis, the thyroid releases hormones that were stored there. This can last for a few weeks or months.</li>
+        <li><h4 style="color:#003366">Excessive iodine:</h4> When you have too much iodine (the mineral that is used to make thyroid hormones) in your body, the thyroid makes more thyroid hormones than it needs. Excessive iodine can be found in some medications (amiodarone, a heart medication) and cough syrups.</li>
+    </ul><br>
+    <h3 style="color:#003366">Symptoms of Thyroid Disease </h3>
+    <ul>
+    <li>Experiencing anxiety, irritability and nervousness.</li>
+    <li>Having trouble sleeping.</li>
+    <li>Losing weight.</li>
+    <li>Having an enlarged thyroid gland or a goiter.</li>
+    <li>Having muscle weakness and tremors.</li>
+    <li>Experiencing irregular menstrual periods or having your menstrual cycle stop.</li>
+    <li>Feeling sensitive to heat.</li>
+    <li>Having vision problems or eye irritation.</li>
+    </ul><br>
+    <p>Symptoms of an underactive thyroid (hypothyroidism) can include:</p><br>
+    <ul>
+    <li>Feeling tired (fatigue).</li>
+    <li>Gaining weight.</li>
+     <li>Experiencing forgetfulness.</li>
+    <li>Having frequent and heavy menstrual periods.</li>
+     <li>Having dry and coarse hair.</li>
+    <li>Having a hoarse voice.</li>
+     <li>Experiencing an intolerance to cold temperatures.</li>
+   
+    </ul>
+</div>
+</body>
+</html>

@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Feedback</title>
+    <style>
+        
+      body,html{
+          background:linear-gradient(to top,rgba(0,0,0,0.6)50%,rgba(0,0,0,0.6)50%), url("/static/images/getty976.jpg");
+          display: flex;
+          justify-content: center;
+          font-family: Roboto, Arial, sans-serif;
+          font-size: 15px;
+          background-size:100%;
+          background-repeat:repeat;
+        }
+
+        marquee{
+            color: yellow;
+            font-size: larger;
+        }
+        .button1 {
+            background-color: black;
+            border-radius: 5px;
+            border: none;
+            color: white;
+            font-weight: bold;
+            padding: 20px 43px;
+            text-align: center;
+            font-size: 16px;
+            margin: 4px 2px;
+            opacity: 0.6;
+            transition: 0.3s;
+            text-decoration: none;
+            cursor: pointer;
+        }
+        .button2 {
+            background-color: black;
+            border: none;
+            color: honeydew;
+            border-radius: 5px;
+            font-weight: bold;
+            padding: 20px 34px;
+            text-align: center;
+            font-size: 16px;
+            margin: 4px 2px;
+            opacity: 0.6;
+            transition: 0.3s;
+            display: inline-block;
+            text-decoration: none;
+            cursor: pointer;
+            align-items: center;
+        }
+        .button3 {
+          background-color: wheat;
+            border: none;
+            color: black;
+            border-radius: 5px;
+            font-weight: bold;
+            padding: 20px 34px;
+            text-align: center;
+            font-size: 16px;
+            margin: 4px 2px;
+            opacity: 0.6;
+            transition: 0.3s;
+            display: inline-block;
+            text-decoration: none;
+            cursor: pointer;
+            align-items: center;
+        }
+        
+.button1:hover {opacity: 3}
+.button2:hover {opacity: 1}
+.button3:hover {opacity: 4}
+
+    </style>
+</head>
+<body>
+    <marquee width="110%" direction="left" height="100px">
+        Please create an account to contact us. Feel free to contact us
+        </marquee><br>
+        {% if user.is_authenticated %}
+        <center><h3 style="color: white;">Hello {{user.first_name}}! ,Thankyou for Visiting</h3></center>
+        <div class="3but">
+        <a href="accounts/logout"><center><button class="button3">Logout</button></a></center>
+        </div>
+        {% else %}
+        <a href="accounts/login"><center><button class="button1">Login</button></a></center>
+        
+       <a href="accounts/register"><center><button class="button2">Sign Up</button></a></center>
+       {% endif %}
+</body>
+</html>

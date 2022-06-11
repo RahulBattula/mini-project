@@ -1,0 +1,566 @@
+{% load static %}
+<html>
+<head>
+<meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>home</title>
+<link rel="stylesheet" href="style.css">
+ <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"> 
+ 
+  
+<style>
+body
+{
+    background:linear-gradient(to top,rgba(0,0,0,0.6)50%,rgba(0,0,0,0.6)50%), url("{% static 'images/back.jpg' %}");
+    
+    background-size:100%;
+    background-repeat:repeat;
+    font-family:sans-serif;
+    
+   
+}
+.can
+ {
+    margin:0% 15% 0% 15%;
+    font-size:18px;
+    font-family:Times New Roman;
+ }
+ *
+{
+    padding: 0;
+    margin:0;
+     box-sizing: border-box;
+}
+
+.menu{
+    background:black;
+    text-align: center;
+}
+
+
+
+.menu ul
+{
+    display:inline-flex;
+    list-style:none;
+     color: #fff;
+     
+}
+.menu ul li
+{
+    width: 150px;
+    margin: 5px;
+    padding: 5px;
+   font-size:20px;
+   
+}
+.menu ul li a
+{
+    text-decoration: none;
+    height:10px;
+    font-size:16px;
+    color: #fff;
+    
+    
+}
+ .menu ul li:hover{
+    background: cadetblue;
+    border-radius:10px;
+   
+}
+.menu .fa
+{
+    margin-right: 6px;
+    
+}
+.submenu
+{
+    display: none;
+    
+}
+.menu ul li:hover .submenu
+{
+    display: block;
+    position: absolute;
+    background: cadetblue ;
+    margin-top: 15px;
+    margin-left: -15px;
+    border-radius:20px;
+}
+
+
+.menu ul li:hover .submenu ul
+{
+    display:block;
+    margin: 0px;
+    padding:0px;
+}
+.menu ul li:hover .submenu ul li
+{
+    width: 300px;
+
+    border-bottom: 1px dotted #fff;
+    background:transparent;
+    border-radius: 0;
+    text-align: left;
+    font-size: 2px;
+   padding:10px;
+}
+
+.menu ul li:hover .submenu ul li:last-child
+{
+    border-bottom: none;
+}
+.menu ul li:hover .submenu ul li a:hover{
+    color:black ;
+}
+.submenu-1
+{
+    display:none;
+}
+.hover-me:hover .submenu-1
+{
+    position: absolute;
+    display: block;
+    margin-top: 0px;
+    margin-left: 140px;
+    background: rgb(10,30,20);
+}
+
+.icon .fa
+{
+
+  padding: 10px;
+  font-size: 30px;
+  width: 50px;
+  text-align: center;
+  text-decoration: none;
+  margin: 5px 2px;
+  border-radius: 50px;
+  box-shadow: 0 5px 4px rgba(0,0,0,.5);
+  
+}
+.icon .fa:hover {
+    opacity: 0.7;
+    transform: translate(0, -10px);
+}
+
+
+
+
+  
+.fa-facebook {
+  background: #3B5998;
+  color: white;
+}
+
+.fa-twitter {
+  background: #55ACEE;
+  color: white;
+}
+.fa-linkedin {
+  background: #007bb5;
+  color: white;
+}
+
+.fa-youtube {
+  background: #bb0000;
+  color: white;
+}
+
+.fa-instagram {
+  background: #125688;
+  color: white;
+}
+
+
+h1{
+    font-family: Arial, Helvetica, sans-serif;
+    color: red;
+}
+h3{
+    line-height: 1.0;
+}
+span1 {
+  background-color: black;
+  border-radius: 10px;
+  padding: 5px;
+  margin:6%;
+}
+span2{
+    background-color: black;
+    border-radius: 10px;
+    padding: 5px;
+   
+}
+span3{
+    background-color: black;
+    border-radius: 10px;
+    padding: 5px;
+}
+span4{
+    
+    
+    background-color: black;
+  border-radius: 10px;
+  padding: 5px;
+  margin:6%;
+}
+.p1{
+     margin:2% 0 0 0;
+    color:white;
+    font-size: 25px;
+    font-family:Times New Roman;
+}
+.p2{
+    margin:2% 0 0 0;
+    color:white;
+    font-size: 25px;
+    font-family:Times New Roman;
+}
+.p3{
+    margin:2% 0 0 0;
+    color:white;
+    font-size: 25px;
+    font-family:Times New Roman;
+}
+.my{ 
+    color: red;
+  
+}
+.team{
+    color: red;
+   
+}
+:root {
+  --surface-color: #fff;
+  --curve: 40;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Noto Sans JP', sans-serif;
+  
+}
+
+.cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+  gap: 2rem;
+  margin: 4rem 5vw;
+  padding: 0;
+  list-style-type: none;
+}
+
+
+.card {
+  position: relative;
+  display: block;
+  height: 105%;  
+  border-radius: 15% 15% 2% 2%;
+  overflow: hidden;
+  text-decoration: none;
+  width:150px;
+}
+
+.card__image {      
+  width: 100%;
+  height: auto;
+}
+
+.card__overlay {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: 1;      
+  border-radius: calc(var(--curve) * 1px);    
+  background-color: var(--surface-color);      
+  transform: translateY(100%);
+  transition: .2s ease-in-out;
+}
+.card:hover .card__overlay {
+  transform: translateY(0);
+  margin:0 0 10 0;
+  border-bottom-right-radius: 0px;
+  border-bottom-left-radius: 0px;
+}
+
+.card__header {
+  position: relative;
+  display: flex;
+  align-items: center;
+  gap: 2px;
+  padding: px;
+  border-radius: calc(var(--curve) * 1px) 0 0 0;    
+  background-color: var(--surface-color);
+  transform: translateY(-100%);
+  transition: .2s ease-in-out;
+}
+
+.card__arc {
+  width: 80px;
+  height: 80px;
+  position: absolute;
+  bottom: 100%;
+  right: 0;      
+  z-index: 1;
+}
+
+.card__arc path {
+  fill: var(--surface-color);
+  d: path("M 40 80 c 22 0 40 -22 40 -40 v 40 Z");
+}       
+
+.card:hover .card__header {
+  transform: translateY(0);
+}
+
+.card__thumb {
+  flex-shrink: 0;
+  width: 50px;
+  height: 50px;      
+  border-radius: 50%;   
+  margin-top: 2%;   
+}
+
+.card__title {
+  font-size: 15px;
+  margin: 0 0 .3em;
+  color: #6A515E;
+}
+
+.card__tagline {
+  display: block;
+  margin: 1em 0;
+  font-family: "MockFlowFont";  
+  font-size: 15px; 
+  color: #D7BDCA;  
+}
+
+.card__status {
+  font-size: 15px;
+  color: #D7BDCA;
+}
+
+.card__description {
+  padding: 0 1em 2em;
+  margin: 0;
+  color: teal;
+  font-family: "MockFlowFont";   
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 3;
+  overflow: hidden;
+  font-size: 13px;
+}    
+#google_translate_element select{
+ background:#f6edfd;
+ color:#383ffa;
+ border: none;
+ border-radius:3px;
+ padding:6px 8px;
+ }
+ .goog-logo-link{
+   display:none!important;
+  }
+ .goog-te-gadget{
+ color:transparent!important;
+ } 
+ .goog-te-banner-frame{
+ display:none !important;
+ }
+ 
+ #goog-gt-tt, .goog-te-balloon-frame{display: none !important;}
+.goog-text-highlight { background: none !important; box-shadow: none !important;}
+
+</style>
+</head>
+
+<body>
+
+<div class="navbar">
+<div class="menu">
+ <ul>
+  <div class="logo">
+  <img src="{% static 'images/logo.png' %}" style="height:60px;width:170px;">
+  </div>
+    <li ><i class="fa fa-home" aria-hidden="true"></i><a href="home.html">HOME</a></li>
+    <li><a href="#"><i class="fa fa-book"></i>EDUCATION</a>
+     <div class="submenu">
+         <ul>
+             <li><a href="intermediate.html">Intermediate</a></li>
+             
+             <li><a href="diploma.html">Diploma/Polytechnic</a></li>
+             <li><a href="iti.html">ITI Courses</a></li>
+             <li><a href="para.html">Paramedical Courses</a></li>
+             <li><a href="vocational.html">Vocational Courses</a></li>
+         </ul>
+     </div>
+     </li>
+     <li><a href="#"><i class="fa fa-stethoscope"></i>HEALTH</a>
+     <div class="submenu">
+         <ul>
+             <li><a href="mens.html">Menstruation Problems</a></li>
+             <li><a href="{% url 'fertility' %}">Fertility Problems</a></li>
+              <li><a href="{% url 'thy' %}">Thyroid Problems</a></li>
+             <li><a href="{% url 'cancer' %}">Breast Cancer</a></li>
+             <li><a href="dep.html">Depression</a></li>
+           
+         </ul>
+     </div>
+     </li>
+    <li><a href="security.html"><i class="fa fa-shield"></i>SECURITY</a></li>
+    <li><a href="about.html"><i class="fa fa-clone"></i>ABOUT US</a></li>
+    <li><a href="index.html"><i class="fa fa-phone"></i>CONTACT</a></li>
+    
+    <div id="google_translate_element" ></div>
+<script type="text/javascript">
+function googleTranslateElementInit() {
+  new google.translate.TranslateElement({pageLanguage: 'en'}, 'google_translate_element');
+}
+</script>
+<script type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+</div>
+</div>
+<div class="can">
+<center><h1 style="margin-top:3%;"><span1>Our Mission</span1></h1></center>
+<div class="p1">
+    <p>The main motive of this website/source is to encourage both Educated & non-Educated Women
+         to achieve what they desired in their life.</p>
+    </div>
+    <center><h1 style="margin-top:3%;"><span2>Our Story</span2></h1></center>
+<div class="p2">
+    <p style="text-align: left">It was started when we don't have atleast much knowledge about society and Women who are struggling everyday.We got a case study
+         about Women. So we studied what are the problems were being faced by the Women in their daily life.We have analyzed those
+     issues how to resolve them using our website. Please support us more so that we can guide you more to acheive your dreams.</p>
+</div>
+<div class="team">
+    <center><h1 style="margin-top:3%;"><span4>Our Team</span4></h1></center>
+</div>
+<body style="background-color: lightyellow;">
+</body>
+            <ul class="cards">
+                <li>
+                  <a href="" class="card">
+                    <img src="{% static 'images/sravani.jpg' %}" class="card__image" alt="" />
+                    <div class="card__overlay">
+                      <div class="card__header">
+                        <svg class="card__arc" xmlns="http://www.w3.org/2000/svg"><path /></svg>                     
+                        <img class="card__thumb" src="{% static 'images/sravani.jpg' %}" alt="" />
+                        <div class="card__header-text">
+                          <h3 class="card__title">Sravani</h3>            
+                          <span class="card__status">1 hour ago</span>
+                        </div>
+                      </div>
+                      <p class="card__description"><b>Back-End Developer</b><br>
+                                                    <b>Dept:IT</b><br>
+                                                      Btech 2nd Year<br>
+                                                      LBRCE </p>
+                    </div>
+                  </a>      
+                </li>
+                <li>
+                  <a href="" class="card">
+                    <img src="{% static 'images/raji.jpg' %}" class="card__image" alt="" />
+                    <div class="card__overlay">        
+                      <div class="card__header">
+                        <svg class="card__arc" xmlns="http://www.w3.org/2000/svg"><path /></svg>                 
+                        <img class="card__thumb" src="{% static 'images/raji.jpg' %}" alt="" />
+                        <div class="card__header-text">
+                          <h3 class="card__title">Rajeswari</h3>
+                          <span class="card__status">3 hours ago</span>
+                        </div>
+                      </div>
+                      <p class="card__description"><b>Front-End Developer</b><br>
+                        <b>IT</b><br>
+                        Btech 2nd Year<br>
+                        LBRCE </p>
+                    </div>
+                  </a>
+                </li>
+                <li>
+               
+                    <a href="" class="card">
+                      <img src="{% static 'images/sabareesh.jpg' %}" class="card__image" alt="" />
+                      <div class="card__overlay">
+                        <div class="card__header">
+                          <svg class="card__arc" xmlns="http://www.w3.org/2000/svg"><path /></svg>                 
+                          <img class="card__thumb" src="{% static 'images/sabareesh.jpg' %}" alt="" />
+                          <div class="card__header-text">
+                            <h3 class="card__title">Sabareesh</h3>
+                            <span class="card__status">3 hours ago</span>
+                          </div>          
+                        </div>
+                        <p class="card__description"><b>Front-End Developer</b><br>
+                          <b>IT</b><br>
+                          Btech 2nd Year<br>
+                          LBRCE </p>   
+                      </div>
+                    </a>
+                  </li>
+                 
+                <li>
+                  <a href="" class="card">
+                    <img src="{% static 'images/swarna.jpg' %}" class="card__image" alt="" />
+                    <div class="card__overlay">
+                      <div class="card__header">
+                        <svg class="card__arc" xmlns="http://www.w3.org/2000/svg"><path /></svg>                 
+                        <img class="card__thumb" src="{% static 'images/swarna.jpg' %}" alt="" />
+                        <div class="card__header-text">
+                          <h3 class="card__title">Swarna</h3>
+                          <span class="card__status">3 hours ago</span>
+                        </div>          
+                      </div>
+                      <p class="card__description"><b>Front-End Developer</b><br>
+                        <b>IT</b><br>
+                        Btech 2nd Year<br>
+                        LBRCE </p>
+                    </div>
+                  </a>
+                </li>    
+              <li>
+                <a href="" class="card">
+                  <img src="{% static 'images/rahul.jpg' %}" class="card__image" alt="" />
+                  <div class="card__overlay">
+                    <div class="card__header">
+                      <svg class="card__arc" xmlns="http://www.w3.org/2000/svg"><path /></svg>                 
+                      <img class="card__thumb" src="{% static 'images/rahul.jpg' %}" alt="" />
+                      <div class="card__header-text">
+                        <h3 class="card__title">Rahul</h3>
+                        <span class="card__status">3 hours ago</span>
+                      </div>          
+                    </div>
+                    <p class="card__description"><b>Backend-End Developer</b><br>
+                      <b>IT</b><br>
+                      Btech 2nd Year<br>
+                      LBRCE </p>
+                  </div>
+                </a>
+              </li>    
+            </ul><br>
+            <div class="my">
+               <center><h1><b><span3>Our Services</span3></b></h1></center>
+                </div>
+                <div class="p3">
+                <p>We'll be available through out the year to clear your doubts and give you a great Vision. 
+                  Our team members will co-ordinate with you directly. You can post your doubts using our Contact us page.
+                We'll update this website when ever there are possible jobs/works available for the Women.
+              Also we will be keep on updating about those who were already started like you and succeeded in their life</p>
+    
+             </div>
+             
+<div class="icon">
+<center><a href="#" class="fa fa-facebook"></a>
+<a href="#" class="fa fa-twitter"></a>
+<a href="#" class="fa fa-linkedin"></a>
+<a href="#" class="fa fa-youtube"></a>
+<a href="#" class="fa fa-instagram"></a></center>
+</div>
+</div>
+    </body>             
+    </html>

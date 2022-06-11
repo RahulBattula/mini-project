@@ -1,0 +1,244 @@
+{% load static %}
+<!DOCTYPE html> 
+<html>     
+<head> 
+<title> menstruation problems</title> 
+<link rel="stylesheet" href="basics.css"> 
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">  
+<style>
+body{
+  font-family:sans-serif;
+  }
+  .men
+ {
+    margin:0% 15% 0% 15%;
+    font-size:22px;
+    font-family:Times New Roman;
+ }
+  
+  
+*
+{
+    padding: 0;
+    margin:0;
+     box-sizing: border-box;
+}
+
+.menu{
+    background:black;
+    text-align: center;
+}
+
+
+
+.menu ul
+{
+    display:inline-flex;
+    list-style:none;
+     color: #fff;
+     
+}
+.menu ul li
+{
+    width: 150px;
+    margin: 5px;
+    padding: 5px;
+   font-size:20px;
+   
+}
+.menu ul li a
+{
+    text-decoration: none;
+    height:10px;
+    font-size:16px;
+    color: #fff;
+    
+    
+}
+ .menu ul li:hover{
+    background: cadetblue;
+    border-radius:10px;
+   
+}
+.menu .fa
+{
+    margin-right: 6px;
+    
+}
+.submenu
+{
+    display: none;
+    
+}
+.menu ul li:hover .submenu
+{
+    display: block;
+    position: absolute;
+    background: cadetblue ;
+    margin-top: 15px;
+    margin-left: -15px;
+    border-radius:20px;
+}
+
+
+.menu ul li:hover .submenu ul
+{
+    display:block;
+    margin: 0px;
+    padding:0px;
+}
+.menu ul li:hover .submenu ul li
+{
+    width: 300px;
+
+    border-bottom: 1px dotted #fff;
+    background:transparent;
+    border-radius: 0;
+    text-align: left;
+    font-size: 2px;
+   padding:10px;
+}
+
+.menu ul li:hover .submenu ul li:last-child
+{
+    border-bottom: none;
+}
+.menu ul li:hover .submenu ul li a:hover{
+    color:black ;
+}
+.submenu-1
+{
+    display:none;
+}
+.hover-me:hover .submenu-1
+{
+    position: absolute;
+    display: block;
+    margin-top: 0px;
+    margin-left: 140px;
+    background: rgb(10,30,20);
+}
+#google_translate_element select{
+ background:#f6edfd;
+ color:#383ffa;
+ border: none;
+ border-radius:3px;
+ padding:6px 8px;
+ }
+ .goog-logo-link{
+   display:none!important;
+  }
+ .goog-te-gadget{
+ color:transparent!important;
+ } 
+ .goog-te-banner-frame{
+ display:none !important;
+ }
+ 
+ #goog-gt-tt, .goog-te-balloon-frame{display: none !important;}
+.goog-text-highlight { background: none !important; box-shadow: none !important;}
+
+</style>
+ 
+</head> 
+<body> 
+<div class="navbar">
+<div class="menu">
+ <ul>
+  <div class="logo">
+  <img src="{% static 'images/logo.png' %}" style="height:60px;width:170px;">
+  </div>
+    <li ><i class="fa fa-home" aria-hidden="true"></i><a href="home.html">HOME</a></li>
+    <li><a href="#"><i class="fa fa-book"></i>EDUCATION</a>
+     <div class="submenu">
+         <ul>
+             <li><a href="intermediate.html">Intermediate</a></li>
+             
+             <li><a href="diploma.html">Diploma/Polytechnic</a></li>
+             <li><a href="iti.html">ITI Courses</a></li>
+             <li><a href="para.html">Paramedical Courses</a></li>
+             <li><a href="vocational.html">Vocational Courses</a></li>
+         </ul>
+     </div>
+     </li>
+     <li><a href="#"><i class="fa fa-stethoscope"></i>HEALTH</a>
+     <div class="submenu">
+         <ul>
+             <li><a href="mens.html">Menstruation Problems</a></li>
+             <li><a href="{% url 'fertility' %}">Fertility Problems</a></li>
+              <li><a href="{% url 'thy' %}">Thyroid Problems</a></li>
+             <li><a href="{% url 'cancer' %}">Breast Cancer</a></li>
+             <li><a href="dep.html">Depression</a></li>
+           
+         </ul>
+     </div>
+     </li>
+    <li><a href="security.html"><i class="fa fa-shield"></i>SECURITY</a></li>
+    <li><a href="about.html"><i class="fa fa-clone"></i>ABOUT US</a></li>
+    <li><a href="index.html"><i class="fa fa-phone"></i>CONTACT</a></li>
+    
+    <div id="google_translate_element" ></div>
+<script type="text/javascript">
+function googleTranslateElementInit() {
+  new google.translate.TranslateElement({pageLanguage: 'en'}, 'google_translate_element');
+}
+</script>
+<script type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+</div>
+</div><br><br>
+<h1 style="text-align:center;color:#003366;"> MENSURATION PROBLEMS</h1> <br>
+<img src="{% static 'images/health.jpg' %}" width="950px" height="400px" style="margin:3% 0 2% 20%;" > 
+   <div class="men"> 
+
+    <p>It is very common for women to have issues with periods, including heavy,  
+        scant, missed or irregular periods. Period cramps remain to be another health issue among women.</p> <br>
+        <p> In general, heavy menstrual bleeding is the menstrual blood loss of more than 80 ml or  
+            periods lasting more than seven days. It has been estimated that about 9 to 14 out of 100 
+             women get heavy periods. Heavy menstruation problems can interfere with daily life and  
+             even result in iron deficiency anaemia in severe cases. Talk to your doctor, if you have 
+              heavy menstrual bleeding to rule out the underlying cause.</p><br> 
+              <p>Another problem women faces with periods is pre-menstruation syndrome (PMS),  
+                  which affects 47.8% of reproductive age women worldwide.2 The common symptoms  
+                  of PMS include changes in appetite, weight gain, abdominal pain, back pain, headache, 
+                   swelling of the breasts, nausea, constipation, anxiety, mood swings, etc. 
+                    These symptoms occur within a few days of the start of menstruation.</p> <br>
+                    <p> Besides the above mentioned issues, a rising concern of today’s woman is polycystic 
+                         ovarian syndrome (PCOS), a common metabolic and endocrine disorder of reproductive age. 
+                          Women with PCOS may have infrequent menstrual periods or excess male hormone (androgen)  
+                          levels. This disorder is getting prevalent in India that accounts to 3.7 to 22.5% of  
+                          females.3 Women affected with PCOS are at increased risk of obesity, type II diabetes  
+                          mellitus, heart disease, infertility, and acne.</p> <br>
+                          <h3 style="color:#003366;">SYMPTOMS:</h3> <br>
+                          <ul> 
+                            <li>Periods that occur less than 21 days or more than 35 days apart.</li> 
+                            <li>Missing three or more periods in a row.</li> 
+                            <li>Menstrual flow that is much heavier or lighter than usual.</li> 
+                            <li>Periods that last longer than seven days.</li> 
+                            <li>Periods that are accompanied by pain, cramping, nausea or vomiting.</li> 
+                            <li>Bleeding or spotting that happens between periods, after menopause or following sex.</li> 
+                          </ul>   <br><br>
+<h3 style="color:#003366;">Causes:</h3> <br>
+<p>There are many causes of menstrual abnormal periods 
+     ,ranging from stress to more serious underlyling medical conditions</p> 
+<ul> 
+<li>Stress and lifestyle factors</li> 
+<li>Birth control pills</li> 
+<li>Uterine polyps or fibroids</li> 
+<li>Endometriosis</li> 
+<li>Pelvic inflammatory disease.</li> 
+<li>Premature ovarian insufficiency</li> 
+</ul> 
+ <br><br>
+<h3 style="color:#003366;">Treatment:</h3> <br>
+<ul> 
+<li>Oral contraceptives.</li> 
+<li>Cyclic progestin.</li> 
+<li>Insertion of a hormone-releasing intrauterine device.</li> 
+<li>Surgical removal of polyps uterine fibroids.</li> 
+</ul> 
+ <br><br>
+ 
+                           
+ </div>
+    </body> 
+</html>

@@ -1,0 +1,397 @@
+{% load static %}
+<html>
+<head>
+<meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>ITI Courses</title>
+<link rel="stylesheet" href="style.css">
+ <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">   
+<style>
+body{
+  font-family:sans-serif;
+  }
+.iti
+    {
+    margin:0% 15% 0% 15%;
+    font-size:22px;
+    font-family:Times New Roman;
+    }
+table
+    {
+        border-collapse:collapse;
+    }
+table,td,th
+    {
+        font-size: 23px;
+        padding:8px;
+        color:#855555;
+    }
+  
+  *
+{
+    padding: 0;
+    margin:0;
+     box-sizing: border-box;
+}
+
+.menu{
+    background:black;
+    text-align: center;
+}
+
+
+
+.menu ul
+{
+    display:inline-flex;
+    list-style:none;
+     color: #fff;
+     
+}
+.menu ul li
+{
+    width: 150px;
+    margin: 5px;
+    padding: 5px;
+   font-size:20px;
+   
+}
+.menu ul li a
+{
+    text-decoration: none;
+    height:10px;
+    font-size:16px;
+    color: #fff;
+    
+    
+}
+ .menu ul li:hover{
+    background: cadetblue;
+    border-radius:10px;
+   
+}
+.menu .fa
+{
+    margin-right: 6px;
+    
+}
+.submenu
+{
+    display: none;
+    
+}
+.menu ul li:hover .submenu
+{
+    display: block;
+    position: absolute;
+    background: cadetblue ;
+    margin-top: 15px;
+    margin-left: -15px;
+    border-radius:20px;
+}
+
+
+.menu ul li:hover .submenu ul
+{
+    display:block;
+    margin: 0px;
+    padding:0px;
+}
+.menu ul li:hover .submenu ul li
+{
+    width: 300px;
+
+    border-bottom: 1px dotted #fff;
+    background:transparent;
+    border-radius: 0;
+    text-align: left;
+    font-size: 2px;
+   padding:10px;
+}
+
+.menu ul li:hover .submenu ul li:last-child
+{
+    border-bottom: none;
+}
+.menu ul li:hover .submenu ul li a:hover{
+    color:black ;
+}
+.submenu-1
+{
+    display:none;
+}
+.hover-me:hover .submenu-1
+{
+    position: absolute;
+    display: block;
+    margin-top: 0px;
+    margin-left: 140px;
+    background: rgb(10,30,20);
+}
+#google_translate_element select{
+ background:#f6edfd;
+ color:#383ffa;
+ border: none;
+ border-radius:3px;
+ padding:6px 8px;
+ }
+ .goog-logo-link{
+   display:none!important;
+  }
+ .goog-te-gadget{
+ color:transparent!important;
+ } 
+ .goog-te-banner-frame{
+ display:none !important;
+ }
+ 
+ #goog-gt-tt, .goog-te-balloon-frame{display: none !important;}
+.goog-text-highlight { background: none !important; box-shadow: none !important;}
+
+</style>
+</head>
+<body>
+<div class="navbar">
+<div class="menu">
+ <ul>
+  <div class="logo">
+  <img src="{% static 'images/logo.png' %}" style="height:60px;width:170px;">
+  </div>
+    <li ><i class="fa fa-home" aria-hidden="true"></i><a href="home.html">HOME</a></li>
+    <li><a href="#"><i class="fa fa-book"></i>EDUCATION</a>
+     <div class="submenu">
+         <ul>
+             <li><a href="intermediate.html">Intermediate</a></li>
+             
+             <li><a href="diploma.html">Diploma/Polytechnic</a></li>
+             <li><a href="iti.html">ITI Courses</a></li>
+             <li><a href="para.html">Paramedical Courses</a></li>
+             <li><a href="vocational.html">Vocational Courses</a></li>
+         </ul>
+     </div>
+     </li>
+     <li><a href="#"><i class="fa fa-stethoscope"></i>HEALTH</a>
+     <div class="submenu">
+         <ul>
+             <li><a href="mens.html">Menstruation Problems</a></li>
+             <li><a href="{% url 'fertility' %}">Fertility Problems</a></li>
+             <li><a href="{% url 'thy' %}">Thyroid Problems</a></li>
+             <li><a href="{% url 'cancer' %}">Breast Cancer</a></li>
+             <li><a href="dep.html">Depression</a></li>
+           
+         </ul>
+     </div>
+     </li>
+    <li><a href="security.html"><i class="fa fa-shield"></i>SECURITY</a></li>
+    <li><a href="about.html"><i class="fa fa-clone"></i>ABOUT US</a></li>
+    <li><a href="index.html"><i class="fa fa-phone"></i>CONTACT</a></li>
+    
+    <div id="google_translate_element" ></div>
+<script type="text/javascript">
+function googleTranslateElementInit() {
+  new google.translate.TranslateElement({pageLanguage: 'en'}, 'google_translate_element');
+}
+</script>
+<script type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+</div>
+</div>
+
+<div class="iti">
+    <br><br>
+   <h2 style="color:#003366">ITI Courses for 2022 – Admission, Eligibility, Courses</h2> <br>
+    <p>ITI Courses 2022: The Directorate General of Employment & Training (DGET), Ministry of Skill Development and Entrepreneurship, Government of India established the Industrial Training Institute (I.T.I.) to provide admission in various ITI courses. Candidates are provided training in various technical and non-technical streams. Candidates can get ITI admission in various streams of ITI courses after 12th or ITI courses after 10th or 8th, depending on the type of program. The officials offer certificate courses for a duration of 1 or 2 years.<br><br>
+
+After completion of Class 10 exams, many candidates take up ITI courses to pursue ITI electrician jobs and more. ITI courses are short-term courses that provide specialisation in different areas of interest to help the candidates to get jobs in their preferred fields. Read the article to know more about the ITI courses list. Information about ITI eligibility, admission, tasks, ITI curriculum, assessment, etc., is also provided here.</p><br>
+    <h2 style="color:#003366">What are ITI Courses?</h2>
+    <p>
+I.T.I. Courses are the courses that are meant for training a student in the technical and non-technical fields. The I.T.I. admission provides earning opportunities right after class 10th or 12th. These courses are vocational training courses that exclusively impart essential skills for getting a job after class 10th or 12th. The Industrial Training Institutes provide vocational training courses to students so that they are able to secure a job when the course ends.<br><br>
+
+The objective of these courses is to help the students to start a small scale business along with helping them to get jobs in the Private and Government sectors. The courses that the ITIs offer is called “Trades” which focus on specific skill sets as per the requirement of the industry. These courses can range anywhere from six months to two years long. The length of course duration depends on what kind of course it is and its nature.</p><br>
+   <h2 style="color:#003366"> ITI Courses 2022: Types of ITI Courses</h2>
+<p>Students can opt for the courses of I.T.I. to get training in various streams before going for graduation. Find below the highlights of I.T.I. courses:</p><br>
+
+    <h3 style="color:#003366">I.T.I. Courses 2022 – Highlights</h3><br>
+    <table height="50" style="width: 80%;text-align: center;font-size:19px;" border="3">
+    <tr>
+     <th>Name of the Institute</th>   
+     <th>Industrial  Training Institute or I.T.I. </th>
+    </tr>
+    <tr>
+     <td>Fee</td>
+     <td>From Rs. 1,600 to Rs. 71,000 (depending on the course)</td>
+    </tr>
+    <tr>
+     <td>Employment</td>
+     <td>Electric Engineer, Welder, Instrument Engineer, Leather Goods Maker</td>
+    </tr>
+    <tr>
+     <td>Eligibility</td>
+     <td>Class 8th pass or Class 10th or Class 12th pass (depends on the course)</td>
+    </tr>
+    <tr>
+     <td>Duration</td>
+     <td>One year to 2 years (depending on the course)</td>
+    </tr>
+    <tr>
+     <td>Course Type</td>
+     <td>Certificate course</td>
+    </tr>
+        
+    </table><br>
+    <h2 style="color:#003366">ITI Course Information: ITI Eligibility Criteria</h2>
+    <p>Candidates seeking admission in the I.T.I. courses must check the eligibility criteria to avoid rejection. The eligibility requirements include age limit, educational qualification and minimum score. Find below the I.T.I. eligibility criteria-</p><br>
+    <h4 style="color:#003366">Age Limit</h4><br>
+    <p>1. Candidates who come under the 14-40 age group on the date of the start of the admission session are eligible for admission.</p><br>
+    <p>2. There is an age relaxation of five years for ex-servicemen and war widows.</p><br>
+    <h4 style="color:#003366">ITI Courses 2022</h4><br>
+    <p>The candidates can find below the top I.T.I. courses. I.T.I. courses after Classes 8, 10, and 12 are listed separately.</p><br>
+    <h3 style="color:#003366">I.T.I Courses after 8th</h3><br>
+    <table height="50" style="width: 80%;text-align: center;font-size:19px;" border="3">
+    <tr>
+     <th>Course</th>   
+     <th>Stream</th>
+     <th>Duration</th>
+    </tr>
+    <tr>
+     <td>Book Binder</td>
+     <td>Non-IT</td>
+     <td>1 year</td>
+    </tr>
+    <tr>
+     <td>Carpenter Engineering</td>
+     <td>Engineering</td>
+     <td>1 year</td>
+    </tr>
+    <tr>
+     <td>Cutting & Sewing</td>
+     <td>Non-IT</td>
+     <td>1 year</td>
+    </tr>
+    <tr>
+     <td>Embroidery & Needle Worker</td>
+     <td>Non-IT</td>
+     <td>1 year</td>
+    </tr>  
+    <tr>
+     <td>Mechanic Tractor</td>
+     <td>Non-IT</td>
+     <td>1 year</td>
+    </tr>  
+    <tr>
+     <td>Pattern Maker Engineering</td>
+     <td>Engineering</td>
+     <td>2 years</td>
+    </tr>  
+    <tr>
+     <td>Plumber Engineering</td>
+     <td>Engineering</td>
+     <td>1 year</td>
+    </tr> 
+    <tr>
+     <td>Welder (Gas & Electric) Engineering</td>
+     <td>Engineering</td>
+     <td>1 year</td>
+    </tr> 
+    </table><br>
+    <h3 style="color:#003366">I.T.I Courses after 10th</h3><br>
+    <table height="50" style="width: 80%;text-align: center;font-size:19px;" border="3">
+    <tr>
+     <th>Course</th>   
+     <th>Stream</th>
+     <th>Duration</th>
+    </tr>
+    <tr>
+     <td>Bleaching & Dyeing Calico Print</td>
+     <td>Non-engineering</td>
+     <td>1 year</td>
+    </tr>
+    <tr>
+     <td>Commercial Art</td>
+     <td>Non-IT</td>
+     <td>1 year</td>
+    </tr>
+    <tr>
+     <td>Diesel Mechanic Engineering</td>
+     <td>Engineering</td>
+     <td>1 year</td>
+    </tr>
+    <tr>
+     <td>Draughtsman (Civil) Engineering</td>
+     <td>Engineering</td>
+     <td>2 years</td>
+    </tr> 
+    <tr>
+    <td>Draughtsman (Mechanical) Engineering</td> 
+    <td>Engineering</td>
+    <td>2 years</td>
+    </tr>
+    <tr>
+    <td>Dress Making</td>
+    <td>Non IT</td>
+    <td>1 year</td>
+    </tr>
+    <tr>
+    <td>Electrician Engineering</td>
+    <td>Engineering</td>
+    <td>2 years</td>
+    </tr>
+    <tr>
+    <td>Fitter Engineering</td>
+    <td>Engineering</td>
+    <td>2 years</td>
+    </tr>
+    </table>
+    <br>
+    <h3 style="color:#003366">I.T.I Courses after 12th</h3><br>
+    <table height="50" style="width: 80%;text-align: center;font-size:19px;" border="3">
+    <tr>
+     <th>Course</th>   
+     <th>Stream</th>
+     <th>Duration</th>
+    </tr>
+    <tr>
+     <td>Travel and Tour Assistant</td>
+     <td>Non-IT</td>
+     <td>1 year</td>
+    </tr>
+    <tr>
+     <td>Surveyor</td>
+     <td>Non-IT</td>
+     <td>2 years</td>
+    </tr>
+    <tr>
+     <td>Stenography Hindi</td>
+     <td>Non-IT</td>
+     <td>1 year</td>
+    </tr>
+    <tr>
+     <td>Stenography English</td>
+     <td>Non-IT</td>
+     <td>1 year</td>
+    </tr>  
+    <tr>
+     <td>Radiology Technician</td>
+     <td>Engineering</td>
+     <td>2 years</td>
+    </tr>  
+    <tr>
+     <td>Plastic Processing Operator</td>
+     <td>Non-IT</td>
+     <td>1 year</td>
+    </tr>  
+    <tr>
+     <td>Physiotherapy Technician</td>
+     <td>Engineering</td>
+     <td>2 years</td>
+    </tr>  
+    <tr>
+     <td>Old Age Care Assistant</td>
+     <td>Non-IT</td>
+     <td>1 year</td>
+    </tr>  
+    </table>
+</div>
+
+</body>
+</html>

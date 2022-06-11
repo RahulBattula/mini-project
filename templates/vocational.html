@@ -1,0 +1,278 @@
+{% load static %}
+<html>
+<head>
+<meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Thyroid problems</title>
+<link rel="stylesheet" href="style.css">
+ <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">   
+<style>
+body{
+  font-family:sans-serif;
+  }
+.voc
+ {
+    margin:0% 15% 0% 15%;
+    font-size:22px;
+    font-family:Times New Roman;
+ }
+*
+{
+    padding: 0;
+    margin:0;
+     box-sizing: border-box;
+}
+
+.menu{
+    background:black;
+    text-align: center;
+}
+
+
+
+.menu ul
+{
+    display:inline-flex;
+    list-style:none;
+     color: #fff;
+     
+}
+.menu ul li
+{
+    width: 150px;
+    margin: 5px;
+    padding: 5px;
+   font-size:20px;
+   
+}
+.menu ul li a
+{
+    text-decoration: none;
+    height:10px;
+    font-size:16px;
+    color: #fff;
+    
+    
+}
+ .menu ul li:hover{
+    background: cadetblue;
+    border-radius:10px;
+   
+}
+.menu .fa
+{
+    margin-right: 6px;
+    
+}
+.submenu
+{
+    display: none;
+    
+}
+.menu ul li:hover .submenu
+{
+    display: block;
+    position: absolute;
+    background: cadetblue ;
+    margin-top: 15px;
+    margin-left: -15px;
+    border-radius:20px;
+}
+.menu ul li:hover .submenu ul
+{
+    display:block;
+    margin: 0px;
+    padding:0px;
+}
+.menu ul li:hover .submenu ul li
+{
+    width: 300px;
+
+    border-bottom: 1px dotted #fff;
+    background:transparent;
+    border-radius: 0;
+    text-align: left;
+    font-size: 2px;
+   padding:10px;
+}
+
+.menu ul li:hover .submenu ul li:last-child
+{
+    border-bottom: none;
+}
+.menu ul li:hover .submenu ul li a:hover{
+    color:black ;
+}
+.submenu-1
+{
+    display:none;
+}
+.hover-me:hover .submenu-1
+{
+    position: absolute;
+    display: block;
+    margin-top: 0px;
+    margin-left: 140px;
+    background: rgb(10,30,20);
+}
+#google_translate_element select{
+ background:#f6edfd;
+ color:#383ffa;
+ border: none;
+ border-radius:3px;
+ padding:6px 8px;
+ }
+ .goog-logo-link{
+   display:none!important;
+  }
+ .goog-te-gadget{
+ color:transparent!important;
+ } 
+ .goog-te-banner-frame{
+ display:none !important;
+ }
+ 
+ #goog-gt-tt, .goog-te-balloon-frame{display: none !important;}
+.goog-text-highlight { background: none !important; box-shadow: none !important;}
+
+</style>
+</head>
+<body>
+<div class="navbar">
+<div class="menu">
+ <ul>
+  <div class="logo">
+  <img src="{% static 'images/logo.png' %}" style="height:60px;width:170px;">
+  </div>
+    <li ><i class="fa fa-home" aria-hidden="true"></i><a href="home.html">HOME</a></li>
+    <li><a href="#"><i class="fa fa-book"></i>EDUCATION</a>
+     <div class="submenu">
+         <ul>
+             <li><a href="intermediate.html">Intermediate</a></li>
+             
+             <li><a href="diploma.html">Diploma/Polytechnic</a></li>
+             <li><a href="iti.html">ITI Courses</a></li>
+             <li><a href="para.html">Paramedical Courses</a></li>
+             <li><a href="vocational.html">Vocational Courses</a></li>
+         </ul>
+     </div>
+     </li>
+     <li><a href="#"><i class="fa fa-stethoscope"></i>HEALTH</a>
+     <div class="submenu">
+         <ul>
+             <li><a href="mens.html">Menstruation Problems</a></li>
+             <li><a href="{% url 'fertility' %}">Fertility Problems</a></li>
+              <li><a href="{% url 'thy' %}">Thyroid Problems</a></li>
+             <li><a href="{% url 'cancer' %}">Breast Cancer</a></li>
+             <li><a href="dep.html">Depression</a></li>
+           
+         </ul>
+     </div>
+     </li>
+    <li><a href="security.html"><i class="fa fa-shield"></i>SECURITY</a></li>
+    <li><a href="about.html"><i class="fa fa-clone"></i>ABOUT US</a></li>
+    <li><a href="index.html"><i class="fa fa-phone"></i>CONTACT</a></li>
+    
+    <div id="google_translate_element" ></div>
+<script type="text/javascript">
+function googleTranslateElementInit() {
+  new google.translate.TranslateElement({pageLanguage: 'en'}, 'google_translate_element');
+}
+</script>
+<script type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+</div>
+</div>
+<br>
+<div class="voc"><br>
+    <h3 style="color:#003366">What are Vocational Courses? Scope Career Opurtunitiess</h3><br>
+    <p>Vocational courses are an educational discipline that enables individual to acquire skills that are required for a particular trade.<br>
+
+ 
+Vocational courses are traditionally non academic and are completely related to a specific trade, occupation or vocation.</p><br>
+    These courses are designed to impart application based study where theoretical aspects are not studied independently.<br>
+    Students after 10th standard can now opt for short and long term courses like diplomas and degrees. There are variety of courses available for students to choose from.<br>
+
+Vocational courses has diversified itself providing a wider scope for students after 10th standard.<br>
+
+Vocational Courses are offered by various institutes, colleges, schools and government aided institutions.<br><br>
+    <h3 style="color:#003366">Vocational Course Topics</h3><br>
+
+Vocational courses are offered in various fields including health care, creative fields like graphic and web designing, food technology and cosmetology.<br>
+Vocational courses are also provided in skilled trades like automotive repair, plumbing, heating and air conditioning.<br><br>
+
+    <h3 style="color:#003366">Popular vocational courses are as follows:</h3><br>
+    <h4 style="color:#003366">Hotel Management</h4><br>
+This course needs the passion to cook and serve, those students with such passion might opt for hospitality management field. Various colleges offers diploma in hotel management with specialisations.<br><br>
+
+    <h3 style="color:#003366">Diploma in graphic designing/web designing</h3><br>
+Students with creativity and love for animation can do well in Graphic designing. This course is offered at various private institutes.<br><br>
+
+    <h3 style="color:#003366">Acting for film and television</h3><br>
+Students with interest and passion for acting and drama can take up diploma courses in art of film making. Institutes like Asian Academy of Film and Television offer diploma course in Acting for film and television.<br><br>
+    <h3 style="color:#003366">Other diploma in vocational courses offered are:</h3><br>
+    <ul>
+    <li>Electrical engineering</li>
+    <li>Telecommunication</li>
+    <li>Computer science</li>
+    <li>Fashion designing</li>
+    <li>Electrical engineering</li>
+    <li>Tourism</li>
+    <li>Event management</li>
+    <li>International trade management</li>
+    <li>Lifestyle products</li>
+    <li>English Communication & Presentation skills</li>
+    <li>Beauty care</li>
+    <li>Catering management </li>
+    <li> Computerised accounting and financial decision making</li>
+    <li>Cosmetology </li>
+    <li>Food preservation/ production and many others </li>
+    
+    </ul><br>
+<h3 style="color:#003366">List of Certification Courses in Vocational Courses are:</h3><br>
+    <ul>
+    <li>Industrial training </li>
+    <li>Beauty culture </li>
+    <li> Hair Design</li>
+    <li>Fabricator </li>
+    <li>Leather craft </li>
+    <li> Pottery</li>
+    <li> Housekeeping</li>
+    <li>Advertising design </li>
+    <li> Clinical Nutrition</li>
+    <li>Hand-loom weaving </li>
+    <li> Nutrition and Dietetics</li>
+    <li>Office Management </li>
+    <li>Corporate Communications</li>
+    </ul><br>
+<h3 style="color:#003366">Benefits of studying vocational courses</h3><br>
+   <ul>
+    
+       <li>Vocational course provides knowledge of the subjects as well as vocational skills.</li>
+<li>Vocational courses focus on specialised practical skills.</li>
+<li>These courses offer insight to requirements of particular types of jobs.</li>
+<li>Vocational courses provide specialised learning which is an added advantage.</li>
+<li>There are diversified courses to provide skilled manpower in the organised sector.</li>
+    </ul><br>
+<h3 style="color:#003366">Colleges in India that offer vocational courses:</h3><br>
+    <ul>
+    
+        <li>Mangalmay Institute Of Management and Technology, UP</li>
+<li>Jagan Nath University, Haryana</li>
+<li>City Group of Colleges, UP</li>
+<li>Institute of Technology And Management (ITM), Dehradun</li>
+<li>The ICFAI University, Dehradun</li>
+<li>Vivekanand Institute of Hotel & Tourism Management, Gujarat</li>
+<li>Dr. B. R. Ambedkar Govt. Polytechnic</li>
+<li>Chamber of Commerce Manali Ramakrishna Polytechnic College, TN</li>
+<li>R.C. Institute of Technology, New Delhi</li>
+<li>Rajeev Gandhi Ayurved College, Andhra Pradesh</li>
+<li>AECS Pavan Industrial Training Institute, Kolar</li>
+<li>Jagadguru Sree Renukacharya Vidya Peeta, Karnataka</li>
+<li>Agarpara College, Orissa</li>
+<li>Abdul Kalam Institute of Technological Sciences</li>
+<li>Academy for Aeronautics and Computer Science</li>
+    </ul>
+</div>
+</body>
+</html>
